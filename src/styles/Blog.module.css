@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
+
+.blog{
+    display: grid;
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+
+.centro{
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .blog{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(min-width: 992px){
+    .blog{
+        grid-template-columns: repeat(3,1fr); 
+    }
+}
+
+
+
+
+

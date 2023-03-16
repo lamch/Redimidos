@@ -1,0 +1,21 @@
+.titulares{
+    display: grid;
+    
+    gap: 4rem;
+    margin-bottom: 5rem;
+    
+}
+
+
+@media (min-width: 768px) {
+    .titulares{
+        grid-template-columns: repeat(2,1fr); 
+    }
+}
+
+@media(min-width: 992px){
+    .titulares{
+       grid-template-columns: repeat(2,1fr); 
+      
+    }
+}

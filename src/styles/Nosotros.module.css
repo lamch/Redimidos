@@ -1,0 +1,22 @@
+.contenido{
+    display: grid;
+    gap: 1rem;
+    text-align: justify;
+}
+
+@media (min-width:768px){
+    .contenido{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        text-align: justify;
+        
+    }
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
