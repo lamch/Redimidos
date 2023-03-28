@@ -1,4 +1,5 @@
 import React, { useEffect, useState, Fragmen,useRef } from "react";
+import stylesBlog from '../../styles/Blog.module.css'
 import parse from 'html-react-parser'
 import { collection, limit, onSnapshot, query as fireQuery, where, doc, docs, getDocs, getDoc, QueryDocumentSnapshot, DocumentData } from "firebase/firestore";
 
@@ -14,12 +15,13 @@ import {
     useColorModeValue,
     Box,
     HStack,
-    Tag,
+    Tag,    
     Heading,
     ChakraNextImage 
 } from '@chakra-ui/react';
 import { db } from "../../../firebase";
 import Layout from "../../../components/Layaout";
+import { Black_And_White_Picture } from "next/font/google";
 
 
 
@@ -70,14 +72,18 @@ const EntradaBlog = ({id}) => {
   
   
   <Center as='section' bg='gray.100' >
-        <Box maxW='720px' bg='white' p='6'>
+        <Box maxW='1020px' bg='white' p='6'>
           
           
           <Heading my='4' size='lg'>
+            <a className={stylesBlog.a}>
             {singleNote.titulo}
+            </a>
           </Heading>
-          {parse(singleNote.descripcion ? singleNote.descripcion.replaceAll("font-size:48px", "font-size:16px") : ""
+          <div className={stylesBlog.margen}>
+          {parse(singleNote.descripcion ? singleNote.descripcion.replaceAll("font-size:48px", "font-size:20px") : ""
             )}
+            </div>
           
         </Box>
       </Center>

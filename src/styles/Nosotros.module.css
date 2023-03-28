@@ -2,6 +2,7 @@
     display: grid;
     gap: 1rem;
     text-align: justify;
+
 }
 
 @media (min-width:768px){
@@ -9,10 +10,18 @@
         grid-template-columns: repeat(1,1fr);
         align-items: center;
         text-align: justify;
+        margin: 3rem;
+        font-size: 2.5rem;
         
     }
 }
 
+.cabecera{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 5rem;
+}
 
 .center {
     display: block;

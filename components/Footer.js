@@ -15,7 +15,8 @@ const Footer = () => {
                     <Link href="/">Contacto</Link>
 
                 </nav>
-                <p className={styles.copyright}>Todos los derechos reservados</p>
+                <p className={styles.copyright}>Todos los derechos reservados - {(new Date().getFullYear())}</p>
+                
             </div>
         </footer>
     )

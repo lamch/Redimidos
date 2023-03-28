@@ -5,34 +5,34 @@ import Image from 'next/image'
 import { Gallery } from "react-grid-gallery";
 import { Grid } from "react-visual-grid";
 
-
+import { storage } from "../../../firebase";
 import Layout from "../../../components/Layaout";
 import { ref, list, listAll, getDownloadURL } from "firebase/storage"
-import { storage } from "../../../firebase";
 
 import { Carousel } from 'react-responsive-carousel';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 
-const EntradaImagen = ({ id }) => {
+const Recientes = ({ id }) => {
 
   const [open, setOpen] = React.useState(false);
 
 
-  
+
 
   const [files, setFiles] = React.useState([])
+  const imagesListRef = ref(storage, id)
+  var arr = [];
 
 
-  
 
 
   useEffect(() => {
     const fetchImages = async () => {
       const storaRef = await ref(storage, id)
       const result = await listAll(storaRef)
-      let urlPromises = result.items.map((imageRef) =>     
+      let urlPromises = result.items.map((imageRef) =>
         getDownloadURL(imageRef)
       );
 
@@ -42,7 +42,7 @@ const EntradaImagen = ({ id }) => {
     const loadImages = async () => {
 
 
-     
+
 
       await setFiles([]);
       const urls = await fetchImages();
@@ -52,24 +52,24 @@ const EntradaImagen = ({ id }) => {
       let temparray = []
 
       urls.forEach((items, index) => {
-        
-       // console.log(index);
-       temparray.push({
-        "src" : items, "index" : index
-       })
-          //setFiles((prev) =>[...prev, {"src" : items, "index" : index }]);
-        
-         
-        });
-        setFiles(temparray);
 
-        
+        // console.log(index);
+        temparray.push({
+          "src": items, "index": index
+        })
+        //setFiles((prev) =>[...prev, {"src" : items, "index" : index }]);
+
+
+      });
+      setFiles(temparray);
+
+
 
     };
 
-    
+
     loadImages();
-  
+
 
 
   }, []);
@@ -91,52 +91,42 @@ const EntradaImagen = ({ id }) => {
 
   const [index, setIndex] = useState(-1);
 
-  const handleClick = (index, item) =>{
+  const handleClick = (index, item) => {
     setIndex(index);
     setOpen(true);
-  } 
- 
+  }
+
   return (
 
-    <Layout pagina='Imagenes'>
-     <main className='contenedor'>
-      
-      
- <Gallery images={files} rowHeight={500}
- onClick={handleClick }
- enableImageSelection={false}
- 
- />
-      
-     
+    <div>
+      <Gallery images={files} rowHeight={500}
+        onClick={handleClick}
+        enableImageSelection={false}
 
-    
-     
-      
+      />
+
+
+
+
+
+
       <Lightbox
         open={open}
         close={() => setOpen(false)}
         slides={files}
         index={index}
-          
-                      
+
+
       />
-      
-
-      {files.map((url) => {
-      // return <img src={url}  alt="" />
-                       
-                  //return <img src={url} />;
-                    })}
-                
-          
-
-          
 
 
 
-      </main>
-    </Layout>
+    </div>
+
+
+
+
+
   )
 }
 
@@ -148,7 +138,7 @@ class GalleryModal extends React.Component {
   }
   componentDidMount() {
     document.body.addEventListener('keydown', this.handleKeyDown);
-  }  
+  }
   componentWillUnMount() {
     document.body.removeEventListener('keydown', this.handleKeyDown);
   }
@@ -160,7 +150,7 @@ class GalleryModal extends React.Component {
     if (e.keyCode === 39 && this.props.hasNext)
       this.props.findNext();
   }
-  render () {
+  render() {
     const { closeModal, hasNext, hasPrev, findNext, findPrev, src } = this.props;
     if (!src) {
       console.log('whut')
@@ -196,4 +186,4 @@ export async function getServerSideProps({ query: { id } }) {
 
 
 
-export default EntradaImagen
+export default Recientes

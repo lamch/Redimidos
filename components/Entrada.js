@@ -15,12 +15,7 @@ const Entrada = ({ entrada }) => {
             color: '$pink800',
           }, }}>
     <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
-      <Col>
-        <Text size={25} weight="bold" transform="uppercase" color="#9E9E9E">
-        {format(fecha.toDate(), 'DD-MM-YYYY')}
-        </Text>
-       
-      </Col>
+     
     </Card.Header>
     <Card.Body css={{ p: 0 }}>
       <Card.Image
@@ -42,13 +37,23 @@ const Entrada = ({ entrada }) => {
       }}
     >
       <Row>
-      <Text h2 color="white"
-      
-        
-        >
+
+      <Col>
+      <Text size={26} h2 color="white"> 
         {titulo} 
         </Text>
+        <Text size={20} weight="bold" transform="uppercase" color="orange"
+         
+        
+        >
+        {format(fecha.toDate(), 'DD-MM-YYYY HH:MM')}
+       
+        </Text>
+       
+       </Col>
+      
       </Row>
+      
     </Card.Footer>
   </Card>
   </Link>

@@ -27,7 +27,7 @@
 }
 
 .navegacion a {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     color: var(--blanco);
     text-decoration: none;
     font-weight: 700;
@@ -39,7 +39,7 @@
 }
 
 .copyright{
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     color: var(--blanco);   
     font-weight: 700;
     text-align: center;

@@ -46,8 +46,6 @@ const Imagenes = () => {
               key={entrada.url}
               entrada={entrada}
             />
-
-
           ))
           }
         </div>

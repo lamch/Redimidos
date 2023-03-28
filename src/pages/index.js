@@ -10,6 +10,7 @@ import { format } from 'fecha';
 import Entrada from '../../components/Entrada';
 import stylesBlog from '../styles/Blog.module.css'
 import stylesTitulares from '../styles/Titulares.module.css'
+import Recientes from "../pages/imagen/recientes"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,8 @@ export default function Home() {
 
 
   const [todos, setTodos] = React.useState([]);
+  const [imagenes, setImagenes] = React.useState([]);
+
   const [titular, setTitular] = React.useState([]);
 
   const [titulo, setTitulo] = React.useState({ titulo: '' });
@@ -33,7 +36,7 @@ export default function Home() {
   const refreshData = async () => {
 
     //const q = fireQuery(collection(db, "noticias").orderBy('fecha',"desc"), where('titulo', '==', "Extremistas islámicos matan a 15 cristianos en el centro-norte de Nigeria"));
-    const q = await fireQuery(collection(db, "noticias"), orderBy('fecha',"desc"), limit(100));
+    const q = await fireQuery(collection(db, "noticias"), orderBy('fecha',"desc"), limit(8));
     onSnapshot(q, (querySnapchot) => {
       let ar = [];
       let art = [];
@@ -68,7 +71,7 @@ export default function Home() {
       <main className='contenedor'>
         <h2 className='heading'></h2>
 
-        <h2>Noticias del día</h2>
+        <h2 className='heading'>Noticias del día</h2>
     
         <div className={stylesTitulares.titulares}>
        
@@ -83,6 +86,8 @@ export default function Home() {
           }
         </div>
 
+        <h2 className='heading'>Últimas noticias</h2>
+
         <div className={stylesBlog.blog}>
           {todos.map(entrada => (
             <Entrada
@@ -96,17 +101,17 @@ export default function Home() {
         </div>
 
 
-
-
+<div className={stylesBlog.center} >
+<h2 className='heading'>Últimas Imagenes</h2>
         
         
-       
+        <Recientes id = "recientes" />
 
-
+        </div>
       </main>
 
      
-
+     
 
 
     </Layout>

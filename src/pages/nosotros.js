@@ -7,7 +7,9 @@ const Nosotros = () => {
   return (
     <Layout pagina='Nosotros'>
       <main className='contenedor'>
-        <h2 className='heading'>Nosotros</h2>
+<div className={styles.background}>
+
+        <h2 className={styles.cabecera} >Nosotros</h2>
         <div className={styles.contenido}>
 
         <p>La redenci&oacute;n se refiere a la liberaci&oacute;n del pecado y la culpa, y a la restauraci&oacute;n de una relaci&oacute;n correcta con Dios. A trav&eacute;s de la redenci&oacute;n, las personas pueden experimentar una transformaci&oacute;n profunda y encontrar un prop&oacute;sito en la vida.</p>
@@ -24,7 +26,7 @@ const Nosotros = () => {
 
           <div>         
 
-
+          </div>
 
           </div>
         </div>

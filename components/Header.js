@@ -18,7 +18,7 @@ const Header = () => {
                     <Link href="/">Inicio</Link>
                     <Link href="/nosotros">Nosotros</Link>
                     <Link href="/imagenes">Imagenes</Link>
-                    <Link href="/">Contacto</Link>
+                    <Link href="/radios">Radios Cristianas</Link>
 
                 </nav>
                 </div>
