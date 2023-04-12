@@ -12,9 +12,14 @@
     }
 }
 
+.contenido{
+    display: flex;
+    justify-content: space-between;
+}
+
 .navegacion{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -22,7 +27,7 @@
     .navegacion{
         
         flex-direction: row;
-        gap: 2rem;
+        gap: 4rem;
 }
 }
 
@@ -44,3 +49,13 @@
     font-weight: 700;
     text-align: center;
 }
+
+
+.changeColor {
+    
+    
+    font-size: "10.5em"
+  }
+  .changeColor:hover {
+    color: lightskyblue;
+  }

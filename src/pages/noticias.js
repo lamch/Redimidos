@@ -7,13 +7,10 @@ import { db } from "../../firebase";
 import React, { useEffect } from "react";
 import { collection, onSnapshot, query as fireQuery, where, orderBy, limit } from "firebase/firestore";
 import { format } from 'fecha';
-import Entrada from '../../components/Entrada';
-import stylesBlog from '../styles/Blog.module.css'
+import Noticias from '../../components/Noticias';
+import stylesBlog from '../styles/Noticias.module.css'
 import stylesTitulares from '../styles/Titulares.module.css'
-import Recientes from "../pages/imagen/recientes"
-import { Button, Text } from '@nextui-org/react';
-import Link from "next/link"
-
+import Recientes from "./imagen/recientes"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -39,17 +36,14 @@ export default function Home() {
   const refreshData = async () => {
 
     //const q = fireQuery(collection(db, "noticias").orderBy('fecha',"desc"), where('titulo', '==', "Extremistas islámicos matan a 15 cristianos en el centro-norte de Nigeria"));
-    const q = await fireQuery(collection(db, "noticias"), orderBy('fecha',"desc"), limit(8));
+    const q = await fireQuery(collection(db, "noticias"), orderBy('fecha',"desc"));
     onSnapshot(q, (querySnapchot) => {
       let ar = [];
       let art = [];
       querySnapchot.docs.forEach((doc, index) => {
-        if(index==0 || index==1){
-          art.push({ id: doc.id, ...doc.data() });
-        }
-        else{
+        
           ar.push({ id: doc.id, ...doc.data() });
-        }
+        
         
       });
       setTodos(ar);
@@ -72,29 +66,13 @@ export default function Home() {
     <Layout pagina='Inicio'>
 
       <main className='contenedor'>
-        
+        <h2 className='heading'></h2>
 
-        <h1 className='heading'>Noticias del día</h1>
-
+        <h2 className='heading'>Todas las noticias</h2>
     
-        <div className={stylesTitulares.titulares}>
-       
-          {titular.map((entrada, index) => (
-            <Entrada
-              key= {entrada.id} 
-              entrada={entrada} 
-            />
-            
-           
-          ))
-          }
-        </div>
-
-        <h2 className='heading'>Últimas noticias</h2>
-
         <div className={stylesBlog.blog}>
           {todos.map(entrada => (
-            <Entrada
+            <Noticias
               key= {entrada.id} 
               entrada={entrada} 
             />
@@ -102,50 +80,11 @@ export default function Home() {
            
           ))
           }
-
-
-
         </div>
 
-
-        
-<center>
-
-<Link href="/noticias" className={stylesBlog.enlace}>           
-<Button
-      color="gradient" auto
      
-      //onClick="/noticias"
-      css={{
-       
-        
-        width: '350px',
-        height: '50px',
-        '&:hover': {
-          transform: 'translateY(-7px)',
-          '&:after': {
-            transform: 'scaleX(1.5) scaleY(1.6)',
-            opacity: 0
-          }
-        },
-        
-      }}
-    >
-    <div className={stylesBlog.boton} >
-     Leer más
-     </div>
-    </Button>
-    </Link>  
-    </center>
 
 
-<div className={stylesBlog.center} >
-<h2 className='heading'>Últimas Imagenes</h2>
-        
-        
-        <Recientes id = "recientes" />
-
-        </div>
       </main>
 
      

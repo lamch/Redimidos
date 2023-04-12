@@ -43,7 +43,7 @@ const EntradaRadio = ({ id }) => {
   
   
     
-    }
+    }, []
     )
 
 

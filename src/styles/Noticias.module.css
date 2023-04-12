@@ -13,17 +13,6 @@
     color: black;
 }
 
-.enlace {
-    text-decoration: none;
-    
-  }
-  
-
-.boton{
-    font-size: 40px;
-    text-decoration: none;
-}
-
 .margen{
     margin: 2rem;
 }
@@ -43,13 +32,13 @@
 
 @media (min-width: 768px) {
     .blog{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
 }
 
 @media(min-width: 992px){
     .blog{
-        grid-template-columns: repeat(3,1fr); 
+        grid-template-columns: repeat(4,1fr); 
     }
 }
 

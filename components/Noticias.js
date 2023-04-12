@@ -10,12 +10,9 @@ const Entrada = ({ entrada }) => {
         
         
         <Link href={`/blog/${id}`} className={styles.enlace} >
-        <Card hoverable clickable width="100%" css={{ w: "100%", h: "600px", '&:hover': {
-            background: '$pink100',
-            color: '$pink800',
+        <Card hoverable clickable width="100%" css={{ w: "100%", h: "400px", '&:hover': {            
           }, }}>
     <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
-     
     <Col>
     <Row justify="center">
             <Button
@@ -26,17 +23,15 @@ const Entrada = ({ entrada }) => {
             >
               <Text
                 css={{ color: "inherit" }}
-                size={18}
+                size={15}
                 weight="bold"
                 transform="uppercase"
               >
-               {categoria}
+                {categoria}
               </Text>
             </Button>
             </Row>
               </Col>
-
-
     </Card.Header>
     <Card.Body css={{ p: 0 }}>
       <Card.Image
@@ -60,10 +55,13 @@ const Entrada = ({ entrada }) => {
       <Row>
 
       <Col>
-      <Text size={26} h2 color="white"> 
+      <Text size={18} h2 color="white"> 
         {titulo} 
         </Text>
        
+
+
+
 
 
         <Col>
@@ -85,7 +83,6 @@ const Entrada = ({ entrada }) => {
             </Button>
             </Row>
               </Col>
-
 
 
        

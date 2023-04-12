@@ -56,7 +56,7 @@ const RadiosCategoria = ({ entrada }) => {
 <div className={stylesRadios.card}>
        
         <div className={stylesRadios.contenedor}>
-        <img className={stylesRadios.img} src={iurl} alt="perrito" />
+        <img className={stylesRadios.img} src={iurl} alt={stylesRadios.titulo} />
        
         </div>
        

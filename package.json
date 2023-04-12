@@ -25,6 +25,7 @@
     "react-dom": "18.2.0",
     "react-grid-gallery": "^1.0.0",
     "react-h5-audio-player": "^3.8.6",
+    "react-icons": "^4.8.0",
     "react-player": "^2.12.0",
     "react-responsive-carousel": "^3.2.23",
     "react-visual-grid": "^0.9.0",

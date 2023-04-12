@@ -16,9 +16,10 @@ const Header = () => {
 
                 <nav className={styles.navegacion}>
                     <Link href="/">Inicio</Link>
-                    <Link href="/nosotros">Nosotros</Link>
+                    <Link href="/noticias">Noticias</Link>                    
                     <Link href="/imagenes">Imagenes</Link>
                     <Link href="/radios">Radios Cristianas</Link>
+                    <Link href="/nosotros">Nosotros</Link>
 
                 </nav>
                 </div>

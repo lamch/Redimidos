@@ -47,7 +47,7 @@ const EntradaBlog = ({id}) => {
   
   
     
-    }
+    }, []
     )
     
   
