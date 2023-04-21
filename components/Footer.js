@@ -14,6 +14,12 @@ const Footer = () => {
     return (
         
         <footer className={styles.footer}>
+
+<button className="btn btn-primary m-3">Sling Academy</button>
+      <button className="btn btn-warning m-3">Hello</button>
+   
+
+
              
             <div className={`contenedor ${styles.contenido}`}>
            <div>
