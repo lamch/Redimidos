@@ -15,9 +15,6 @@ const Footer = () => {
         
         <footer className={styles.footer}>
 
-<button className="btn btn-primary m-3">Sling Academy</button>
-      <button className="btn btn-warning m-3">Hello</button>
-   
 
 
              
@@ -29,9 +26,9 @@ const Footer = () => {
             
             <div className={`contenedor ${styles.navegacion}`}>
                 <nav className={styles.navegacion}>
-                    <Link href="https://www.facebook.com/Redimidos2.0"> <FaFacebookF size="50px" className={styles.changeColor} />  </Link>
-                    <p className={styles.copyright}>|</p><Link href="https://www.facebook.com/Redimidos2.0"> <FaTwitter size="50px" className={styles.changeColor} /> </Link>
-                    <p className={styles.copyright}>|</p><Link href="https://play.google.com/store/apps/details?id=com.bo.appcristiana"> <FaAndroid size="50px" className={styles.changeColor} />  </Link>
+                    <Link target="_blank" href="https://www.facebook.com/Redimidos2.0"> <FaFacebookF size="50px" className={styles.changeColor} />  </Link>
+                    <p className={styles.copyright}>|</p><Link target="_blank" href="https://twitter.com/RedimidosNet"> <FaTwitter size="50px" className={styles.changeColor} /> </Link>
+                    <p className={styles.copyright}>|</p><Link target="_blank" href="https://play.google.com/store/apps/details?id=com.bo.appcristiana"> <FaAndroid size="50px" className={styles.changeColor} />  </Link>
                    
                 </nav>
                 </div>

@@ -25,20 +25,20 @@ const Header = () => {
 
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav" className={styles.navegacion}>
-        <li class="nav-item h1 m-3">        
+      <ul className={styles.navegacion}>
+        <li class="h1">        
           <Link className={styles.customtoggler}  href="/">Inicio</Link>
         </li>
-        <li class="nav-item h1 m-3">
-        <Link className={styles.customtoggler} href="/noticias" >Noticias</Link>
+        <li class="h1">
+        <Link className={styles.customtoggler} href="/noticias" >Notícias</Link>
         </li>
-        <li class="nav-item h1 m-3">
+        <li class="h1">
         <Link className={styles.customtoggler} href="/imagenes" >Imágenes</Link>
         </li>
-        <li class="nav-item h1 m-3">
+        <li class="h1">
         <Link className={styles.customtoggler} href="/radios" >Radios Cristianas</Link>
         </li>
-        <li class="nav-item h1 m-3">
+        <li class="h1">
         <Link className={styles.customtoggler} href="/nosotros">Nosotros</Link>
         </li>
       
