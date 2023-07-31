@@ -28,6 +28,15 @@
   width: 100%;
   }
 
+  .padding{
+    padding: 5rem;
+}
+
+.sidebar{
+    grid-template-columns: 3fr 1fr;
+  grid-gap: 10px 20px;
+  display: grid;
+}
 
 
 @media (min-width: 768px) {
@@ -38,7 +47,7 @@
 
 @media(min-width: 992px){
     .blog{
-        grid-template-columns: repeat(3,1fr); 
+        grid-template-columns: repeat(2,1fr); 
     }
 }
 

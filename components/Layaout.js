@@ -16,6 +16,7 @@ const Layout = ( {children, pagina} ) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Sitio de noticias cristianas" />
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9577139226355545" crossorigin="anonymous"></script>
       </Head>
 
       <Header />
