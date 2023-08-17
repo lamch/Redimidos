@@ -36,36 +36,41 @@
 
   
   .a {
+    background-image: linear-gradient(
+      to right,
+      rgb(115, 250, 200),
+      #54b3d6 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
     position: relative;
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
-    opacity: .7;
-    transition: opacity .3s cubic-bezier(.51, .92, .24, 1);
-}
-    .a::after {
-      --scale: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
   
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 100%;
-      height: 3px;
-      background: linear-gradient(135deg, rgb(115, 250, 200), rgb(0, 190, 225));
-      transform: scaleX(var(--scale));
-      transform-origin: var(--x) 50%;
-      transition: transform .3s cubic-bezier(.51, .92, .24, 1);
-    }
+  .a:before{
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+  
   .a:hover {
-      opacity: 1;
-    }
+   background-position: 0;
+  }
   
-    .a:hover::after {
-      --scale: 1;
-    }
-  
-
+  .a:hover::before{
+    width: 100%;
+  }
 
 
 .enlace {
