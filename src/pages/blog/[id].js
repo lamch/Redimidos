@@ -34,16 +34,9 @@ const EntradaBlog = ({id}) => {
     const [count, setCount] = React.useState({id}); 
   
     useEffect(() => {
-        console.log("dddd" + id);
-        console.log("fffff" + count);
-        //findOne();
-    
-        //if(singleNote == null){
-        //try {
-     //  console.log(router);
-     
+        
       getSingleNote(id)
-    // setSingleNote({ ...data.data(), id: data.id })
+   
   
   
     
@@ -52,11 +45,10 @@ const EntradaBlog = ({id}) => {
     
   
     const getSingleNote = async (id) => {
-      console.log("aaa" + id);
+    
      if(id != null && id != undefined){
       const singleNotea = doc(db, 'noticias', id);
       const data = await getDoc(singleNotea);
-      //setSingleNote({ ...data.data(), id: data.id })
       
       setSingleNote({ ...data.data(), id: data.id })
      }
