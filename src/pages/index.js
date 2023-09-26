@@ -111,7 +111,7 @@ export default function Home() {
         
 <center>
 
-<Link href="/noticias" className={stylesBlog.enlace}>           
+<Link href="/listaNoticias" className={stylesBlog.enlace}>           
 <Button
       color="gradient" auto
      

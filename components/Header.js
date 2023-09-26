@@ -30,7 +30,7 @@ const Header = () => {
           <Link className={styles.customtoggler}  href="/">Inicio</Link>
         </li>
         <li class="h1">
-        <Link className={styles.customtoggler} href="/noticias" >Noticias</Link>
+        <Link className={styles.customtoggler} href="/listaNoticias" >Noticias</Link>
         </li>
         <li class="h1">
         <Link className={styles.customtoggler} href="/imagenes" >Imágenes</Link>

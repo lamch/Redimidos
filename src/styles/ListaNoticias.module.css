@@ -29,15 +29,15 @@
   }
 
   .padding{
-    padding: 5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 
-.sidebar{
-    grid-template-columns: 3fr 1fr;
-  grid-gap: 10px 20px;
-  display: grid;
+.boton{
+    font-size: 40px;
+    padding-bottom: 10px;
+    text-decoration: none;
 }
-
 
 @media (min-width: 768px) {
     .blog{
@@ -47,7 +47,7 @@
 
 @media(min-width: 992px){
     .blog{
-        grid-template-columns: repeat(2,1fr); 
+        grid-template-columns: repeat(3,1fr); 
     }
 }
 

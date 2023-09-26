@@ -9,7 +9,7 @@ const Entrada = ({ entrada }) => {
     return (
         
         
-        <Link href={`/blog/${id}`} className={styles.enlace} >
+        <Link href={`/noticias/${id}`} className={styles.enlace} >
         <Card hoverable clickable width="100%" css={{ w: "100%", h: "400px", '&:hover': {            
           }, }}>
     <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
