@@ -7,8 +7,8 @@
     display: grid;
     gap: 4rem;
     margin-bottom: 5rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 15rem;
+    padding-right:15rem;
     padding-top: 2rem;
 }
 
@@ -173,8 +173,8 @@ font-weight: bold;
 
 .footer {
 
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
   margin-bottom: 10rem;
 }
 

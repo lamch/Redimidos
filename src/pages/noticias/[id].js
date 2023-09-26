@@ -240,7 +240,7 @@ const EntradaBlog = ({ id, titulo, fecha, categoria, descripcion, imagen }) => {
 
 
 
-              <li className={stylesBlog.item}>
+              <li className={stylesBlog.item} key={entrada.id}>
 
 <Link href={`/noticias/${entrada.id}`} >
 
