@@ -224,6 +224,7 @@ const EntradaBlog = ({ id, titulo, fecha, categoria, descripcion, imagen }) => {
 
           </Box>
         </Center>
+        
 
         <div className={stylesBlog.navbar}>
 
