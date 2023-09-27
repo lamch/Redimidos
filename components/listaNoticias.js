@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from '../src/styles/Entrada.module.css'
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
 
-const Entrada = ({ entrada }) => {
+const listaNoticias = ({ entrada }) => {
     const { titulo, fecha, id, imagen, categoria } = entrada
     return (
         
@@ -137,4 +137,4 @@ const Entrada = ({ entrada }) => {
     )
 }
 
-export default Entrada
+export default listaNoticias

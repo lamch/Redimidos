@@ -35,14 +35,16 @@
 }
 
 .listaNav {
-  list-style: none;
+  list-style: none !important; 
   padding: 0;
   margin: 0;
+  
 }
 
 .item {
   padding: 10px;
   border-bottom: 1px solid red;
+  text-decoration: none;
 }
 
 .titulo{
@@ -88,6 +90,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    
   }
   
   .a:before{
@@ -157,6 +161,7 @@ font-weight: bold;
   display: grid;
   grid-template-columns: repeat(1, 1fr); 
   gap: 20px;
+  
 }
 
 .listaSeparacion {
@@ -200,4 +205,9 @@ font-weight: bold;
 .slide h2 {
   color: white;
   text-align: center;
+}
+
+
+.listaNav a {
+  text-decoration: none; 
 }

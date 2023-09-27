@@ -5,6 +5,7 @@ import stylesBlog from '../../styles/Noticia.module.css'
 import parse from 'html-react-parser';
 import Slider from "react-slick";
 import Entrada from '../../../components/Entrada';
+import NavBar from '../../../components/NavBar';
 import { collection, limit, onSnapshot, query as fireQuery, where, doc, docs, getDocs, getDoc, QueryDocumentSnapshot, DocumentData, orderBy } from "firebase/firestore";
 
 import {
@@ -103,10 +104,11 @@ function manualSerialize(obj) {
 
 const EntradaBlog = ({ id, titulo, fecha, categoria, descripcion, imagen }) => {
 
+  const [singleNote, setSingleNote] = React.useState(categoria);
   const [todos, setTodos] = React.useState([]);
   const [ultimos, setUltimos] = React.useState([]);
 
-  const [singleNote, setSingleNote] = React.useState(categoria);
+  
   //const [singleNote, setSingleNote] = React.useState(note);
 
   const settings = {
@@ -147,9 +149,9 @@ const EntradaBlog = ({ id, titulo, fecha, categoria, descripcion, imagen }) => {
 
   useEffect(() => {
     //setSingleNote(note);
-    console.log("cata   : " + categoria);
+   // console.log("catagoria: " + categoria);
 
-    refreshData();
+    refreshData(singleNote);
     refreshUltimo();
     //console.log("todos : " + todos);
 
@@ -162,10 +164,10 @@ const EntradaBlog = ({ id, titulo, fecha, categoria, descripcion, imagen }) => {
 
 
 
-  const refreshData = async () => {
+  const refreshData = async (category) => {
 
-    console.log("nota:  " + singleNote);
-    const q = await fireQuery(collection(db, "noticias"), where('categoria', '==', singleNote), orderBy('fecha', "desc"), limit(10));
+    console.log("nota:  " + category);
+    const q = await fireQuery(collection(db, "noticias"), where('categoria', '==', category), orderBy('fecha', "desc"), limit(10));
     onSnapshot(q, (querySnapchot) => {
       let ar = [];
       let art = [];
@@ -173,19 +175,17 @@ const EntradaBlog = ({ id, titulo, fecha, categoria, descripcion, imagen }) => {
         if (doc.id != id) {
           ar.push({ id: doc.id, ...doc.data() });
         }
-
-
-
-
       });
       setTodos(ar);
     });
+
+    //setSingleNote(category);
   }
 
 
   const refreshUltimo = async () => {
 
-    console.log("nota:  " + singleNote);
+    //console.log("nota:  " + singleNote);
     const q = await fireQuery(collection(db, "noticias"), orderBy('fecha', "desc"), limit(8));
     onSnapshot(q, (querySnapchot) => {
       let ar = [];
@@ -226,38 +226,12 @@ const EntradaBlog = ({ id, titulo, fecha, categoria, descripcion, imagen }) => {
         </Center>
         
 
-        <div className={stylesBlog.navbar}>
-
-          <div className={stylesBlog.container}>
-          <div className={stylesBlog.titulo}>
-            {categoria}
-          </div>
-
-
-          <ul className={stylesBlog.listaNav}>
-
-            {todos.map(entrada => (
-
-
-
-              <li className={stylesBlog.item} key={entrada.id}>
-
-<Link href={`/noticias/${entrada.id}`} >
-
-                <div className={stylesBlog.lista}>
-                  <a className={stylesBlog.a}>
-                    {entrada.titulo}
-                  </a>
-                </div>
-</Link>
-              </li>
-
-
-            ))
-            }
-
-          </ul>
-          </div>
+        <div>
+        <NavBar
+                   category = {categoria} 
+                   
+                 />
+        
         </div>
 
       </div>
