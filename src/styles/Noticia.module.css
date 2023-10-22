@@ -16,6 +16,10 @@
   
 }
 
+.content{
+
+}
+
 .container {
  
   margin: 0 auto;
@@ -149,6 +153,8 @@
         grid-template-rows: 1fr 1fr;
         padding-left: 15rem;
         padding-right:15rem;
+        grid-template-areas: 
+    "content navbar"
     }
 }
 
@@ -156,6 +162,8 @@
   .blog{
       grid-template-columns:2fr 1fr; 
       grid-template-rows:3fr; 
+      grid-template-areas: 
+    "content navbar"
   }
 }
 

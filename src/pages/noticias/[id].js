@@ -208,6 +208,7 @@ const EntradaBlog = ({ id, titulo, fecha, categoria, descripcion, imagen }) => {
 
     <Layout pagina={titulo}>
       <div className={stylesBlog.blog}>
+        <div className={stylesBlog.content}>
         <Center as='section' bg='gray.100' >
           <Box maxW='1020px' bg='white' p='6'>
 
@@ -224,9 +225,9 @@ const EntradaBlog = ({ id, titulo, fecha, categoria, descripcion, imagen }) => {
 
           </Box>
         </Center>
-        
+        </div>
 
-        <div>
+        <div className={stylesBlog.NavBar}>
         <NavBar
                    category = {categoria} 
                    
