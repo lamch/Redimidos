@@ -88,7 +88,7 @@ export default function Home() {
       
     <div className={stylesBlog.padding}>
 
-        <h2 className='heading'>Últimas noticiassss</h2>
+        <h2 className='heading'>Últimas noticias</h2>
     
    
         <div className={stylesBlog.blog}>
