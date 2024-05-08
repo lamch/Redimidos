@@ -28,11 +28,24 @@
   width: 100%;
   }
 
-  .padding{
-    padding-left: 20rem;
-    padding-right: 20rem;
-}
-
+  .padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .padding {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .padding {
+      padding-left: 20rem;
+      padding-right: 20rem;
+    }
+  }
 .boton{
     font-size: 40px;
     padding-bottom: 10px;
