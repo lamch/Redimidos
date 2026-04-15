@@ -47,8 +47,7 @@ export default async function handler(req, res) {
   const { password, noticia, imagenBase64, imagenNombre } = req.body;
 
   const envPassword = process.env.ADMIN_PASSWORD;
-  console.log('ENV password set:', !!envPassword, '| lengths:', envPassword?.length, password?.length);
-  if (!envPassword || password.trim() !== envPassword.trim()) {
+  if (!envPassword || password?.trim() !== envPassword.trim()) {
     return res.status(401).json({ error: 'Contraseña incorrecta' });
   }
 

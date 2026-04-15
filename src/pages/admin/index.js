@@ -31,12 +31,21 @@ export default function Admin() {
     if (saved) { setPassword(saved); setAutenticado(true); }
   }, []);
 
-  function login(e) {
+  async function login(e) {
     e.preventDefault();
     if (!password.trim()) return;
+    setError('');
+    const res = await fetch('/api/admin/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password }),
+    });
+    if (!res.ok) {
+      setError('Contraseña incorrecta');
+      return;
+    }
     sessionStorage.setItem('admin_pw', password);
     setAutenticado(true);
-    setError('');
   }
 
   function handleImagen(e) {
