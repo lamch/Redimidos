@@ -55,6 +55,17 @@ export default async function handler(req, res) {
   const fecha = noticia.fecha || new Date().toISOString();
   let imagenPath = noticia.imagenUrl || '';
 
+  // Convertir texto plano a HTML si no tiene etiquetas
+  function textoAHtml(texto) {
+    if (!texto) return '';
+    if (/<[a-z][\s\S]*>/i.test(texto)) return texto; // ya es HTML
+    return texto
+      .split(/\n\n+/)
+      .map(p => `<p>${p.replace(/\n/g, '<br/>')}</p>`)
+      .join('');
+  }
+  noticia.contenido = textoAHtml(noticia.contenido);
+
   const token = process.env.GITHUB_TOKEN;
   const repo = process.env.GITHUB_REPO || 'lamch/Redimidos';
   const branch = process.env.GITHUB_BRANCH || 'main';

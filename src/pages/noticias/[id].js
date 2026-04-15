@@ -24,10 +24,19 @@ const EntradaBlog = ({ id, noticia, relacionadas, ultimos }) => {
               <Heading my='4' size='lg'>
                 <a className={stylesBlog.a}>{noticia.titulo}</a>
               </Heading>
-              <div className={stylesBlog.margen}>
+              {noticia.imagen && (
+                <img
+                  src={noticia.imagen}
+                  alt={noticia.titulo}
+                  className={stylesBlog.imagenPrincipal}
+                />
+              )}
+              <div className={`${stylesBlog.margen} ${stylesBlog.contenidoNoticia}`}>
                 {parse(noticia.descripcion
-                  ? noticia.descripcion.replaceAll("font-size:48px", "font-size:20px")
-                  : ""
+                  ? noticia.descripcion
+                      .replaceAll('font-size:48px', 'font-size:inherit')
+                      .replaceAll('font-size:48px;', 'font-size:inherit;')
+                  : ''
                 )}
               </div>
             </Box>
