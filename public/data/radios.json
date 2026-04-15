@@ -1,0 +1,282 @@
+[
+  {
+    "id": 10,
+    "descripcion": "Orión Stereo 102.7FM busca enseñar los principios divinos, a cada individuo basado en las sagradas escrituras, e invitando a desarrollar el carácter de Cristo en el ser humano y glorificar a Dios en mente cuerpo y espíritu, y prestar servicio a la comunidad del occidente de Guatemala",
+    "iurl": "/storage/radios/orionstereo.jpg",
+    "titulo": "Orión Stereo",
+    "url": "https://ss.redradios.net:8046/stream",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/orionstereo.jpg"
+  },
+  {
+    "id": 12,
+    "titulo": "PIB León Radio",
+    "url": "https://stream3.mexiserver.com:10196/;",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/pibleonradio.png",
+    "descripcion": "Una voz de bendición primera Iglesia Bautista León Nicaragua.",
+    "iurl": "/storage/radios/pibleonradio.png"
+  },
+  {
+    "id": 15,
+    "iurl": "/storage/radios/presencia1023.jpg",
+    "descripcion": "Presencia Radio 102.3FM es un una radioemisora que transmite la Palabra de Dios en distintos formatos creativos, innovadores y dinámicos para bendecir a nuestros oyentes, trasladando la presencia de Dios a todo el suroccidente de Guatemala a través del 102.3.",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/presencia1023.jpg",
+    "titulo": "Presencia Radio 102.3FM",
+    "url": "https://ss.redradios.net:8051/stream?type=.mp3"
+  },
+  {
+    "id": 17,
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radioactitud.jpg",
+    "titulo": "Radio Actitud 100.9 FM",
+    "url": "https://ss.redradios.net:8002/stream?type=.mp3",
+    "iurl": "/storage/radios/radioactitud.jpg",
+    "descripcion": "Radio Actitud 100.9 FM es una radio cristiana que busca acompañarte y mejorar tu calidad de vida por medio de una programación inteligente enfocada en mejorar tu actitud."
+  },
+  {
+    "id": 19,
+    "descripcion": "Radio Adoración INT es una emisora cristiana que transmite desde Panamá formando parte de la iglesia Casa de Adoración.",
+    "iurl": "/storage/radios/radioadoracionint.jpg",
+    "titulo": "Radio Adoración INT",
+    "url": "https://studio20.radiolize.com/radio/8050/radio.mp3?1586047743=",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radioadoracionint.jpg"
+  },
+  {
+    "id": 2,
+    "iurl": "/storage/radios/895_logo.png",
+    "descripcion": "Life FM 895 Una Senda De Vida",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/895_logo.png",
+    "url": "https://radio.zarza.com/proxy/life?mp=/stream",
+    "titulo": "Life FM 895"
+  },
+  {
+    "id": 24,
+    "url": "http://audio.armonia.cl:3032/1.mp3",
+    "titulo": "Radio Armonia",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radioarmonia.jpg",
+    "descripcion": "Radio Armonia busca difundir a través de medios de comunicación, tales como, Radio, Internet y Escritos, las verdades y prácticas cristianas que son reveladas en las Sagradas Escrituras.",
+    "iurl": "/storage/radios/radioarmonia.jpg"
+  },
+  {
+    "id": 28,
+    "iurl": "/storage/radios/radiobetel95.jpg",
+    "descripcion": "Radio Betel 95.3FM es una emisora evangélica que transmite desde Barrio La Cruz, San Miguel, El Salvador.",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radiobetel95.jpg",
+    "url": "https://panel.yupistream.com/proxy/ysbetel/stream",
+    "titulo": "Radio Betel 95.3FM"
+  },
+  {
+    "id": 29,
+    "iurl": "/storage/radios/radiocaminandocristo.png",
+    "descripcion": "Radio Caminando en Cristo en Santidad es una emisora que predicamos la sana doctrina, con la misión de ser de edificación y bendición en la vida de sus oyentes.",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radiocaminandocristo.png",
+    "titulo": "Radio Caminando en Cristo en Santidad",
+    "url": "https://sonicpanel.us/8020/stream"
+  },
+  {
+    "id": 31,
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radio-casa-de-dios-colombia.png.webp",
+    "titulo": "Radio Casa de Dios",
+    "url": "https://radio35.virtualtronics.com/proxy/casadedios?mp=/stream",
+    "iurl": "/storage/radios/radio-casa-de-dios-colombia.png.webp",
+    "descripcion": "Radio Casa de Dios es parte de la Iglesia del mismo nombre la cual tiene la principal finalidad la divulgación, difusión y enseñanza del evangelio de nuestro Señor Jesucristo con fundamento en la palabra de Dios, la Santa Biblia."
+  },
+  {
+    "id": 32,
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radiocentrocristiano.jpg",
+    "titulo": "Radio Centro Cristiano",
+    "url": "https://vivo.miradio.in:7008/;stream/1",
+    "iurl": "/storage/radios/radiocentrocristiano.jpg",
+    "descripcion": "Radio Centro Cristiano es una emisora chilena en donde puedes oír la Palabra del Señor para tu vida en la compañía de varios pastores, los cuales te guiarán en una sana doctrina."
+  },
+  {
+    "id": 34,
+    "iurl": "/storage/radios/radio-conexion-libertad-chile.png.webp",
+    "descripcion": "Radio Conexión Libertad es una nueva emisora Cristiana para la ciudad de Alto Hospicio, Portavoz del Evangélio de Cristo.",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radio-conexion-libertad-chile.png.webp",
+    "url": "https://streaming.viphosting.cl/8078/stream",
+    "titulo": "Radio Conexión Libertad"
+  },
+  {
+    "id": 36,
+    "url": "https://streaming01.shockmedia.com.ar:10794/;stream.mp3",
+    "titulo": "Radio Cristiana Chile",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radiocristianachile.png",
+    "descripcion": "Radio Cristiana es la radio de la Iglesia Ministerio Levantando a Cristo.\nEsta conformada por un gran equipo humano y técnico dirigido por el Pastor Gonzalo Maturana. Su objetivo es edificar a nuestros auditores, con una enseñanza 100% bíblica y centrada en la doctrina de nuestro Señor Jesucristo; además, ser una compañía diaria, donde la música cristiana y la sana entretención permitan a quienes nos escuchan pasar un buen momento lejos de toda distracción secular.",
+    "iurl": "/storage/radios/radiocristianachile.png"
+  },
+  {
+    "id": 42,
+    "iurl": "/storage/radios/radio-cristiano-biblico-colombia.png.webp",
+    "descripcion": "Radio Cristiano Bíblico \"Compartiendo la sana doctrina de día y de noche\" con una programación de estudios bíblicos realizados por Pastores que \"predican a Jesucristo, y a Él crucificado\".",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radio-cristiano-biblico-colombia.png.webp",
+    "titulo": "Radio Cristiano Bíblico",
+    "url": "https://vivo.miradio.in/8036/stream"
+  },
+  {
+    "id": 43,
+    "descripcion": "Radio Eben Ezer tiene como misión que las personas conozcan el verdadero amor de Cristo y que hagan de él, algo real y que sus vidas puedan manifestar que Dios vive en ellos y que cada día tengan una relación personal con Cristo.",
+    "iurl": "/storage/radios/radioebenezer.jpg",
+    "titulo": "Radio Eben Ezer",
+    "url": "https://securestreams4.autopo.st:1701/stream",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radioebenezer.jpg"
+  },
+  {
+    "id": 45,
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radioelbuenpastor.jpg",
+    "url": "http://max.miradio.in:8221/stream",
+    "titulo": "Radio El Buen Pastor 94.9FM",
+    "iurl": "/storage/radios/radioelbuenpastor.jpg",
+    "descripcion": "Radio El Buen Pastor 94.9FM es una emisora cristiano-evangélica que lleva el mensaje de Dios a todas criaturas. Transmitiendo desde San Francisco Gotera, Morazán, El Salvador."
+  },
+  {
+    "id": 46,
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radioelsalvadormundo.webp",
+    "url": "https://radio15.servidorderadio.net/8036/stream",
+    "titulo": "Radio El Camino 106.1FM",
+    "iurl": "/storage/radios/radioelsalvadormundo.webp",
+    "descripcion": "Radio El Camino es parte de la Iglesia del Camino de El Salvador."
+  },
+  {
+    "id": 48,
+    "titulo": "Radio Elohim 1120AM",
+    "url": "https://whmsonic.playerfullhd.com/9498/stream;",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/radioelohim.jpg",
+    "descripcion": "Radio Elohim 1120 AM es una emisora de radio emisora en San salvador, El Salvador, proveyendo programación Religiosa, Cristiana.",
+    "iurl": "/storage/radios/radioelohim.jpg"
+  },
+  {
+    "id": "75QU3rabfkCXENPt2VrF",
+    "descripcion": "La Voz Del Rey De Gloria es una radio cristiana dirigida por el pastor Orlando Barahona.",
+    "iurl": "/storage/radios/la-voz-del-rey-de-gloria.png.webp",
+    "titulo": "La Voz Del Rey De Gloria",
+    "url": "https://ss.redradios.net:8029/stream?type=.mp3",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/la-voz-del-rey-de-gloria.png.webp"
+  },
+  {
+    "id": 9,
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/nuevavida.png",
+    "url": "http://radio.ministeriotv.com:8042/stream.mp3",
+    "titulo": "Nueva vida 97.7",
+    "iurl": "/storage/radios/nuevavida.png",
+    "descripcion": "Radio con una programación enfocada en la fe cristiana, en la que se ofrece difusión de eventos, noticias relevantes, campañas de evangelización, sano entretenimiento para toda la familia y más."
+  },
+  {
+    "id": "Ivu06Osgv94AnFZGG2pL",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/estereo-luz-94.9-fm-nicaragua.png.webp",
+    "titulo": "Estereo Luz 94.9 FM",
+    "url": "https://aguila1.netkairos.com/8070/stream",
+    "iurl": "/storage/radios/estereo-luz-94.9-fm-nicaragua.png.webp",
+    "descripcion": "Una de las Emisoras Cristianas mas escuchadas de nuestro Nicaragua, llegando a los Municipios de San Juan del Rio Coco, Jicaro, Jalapa, Sn Fernando, Ciudad Antigua, Ocotal, Murra, Wiwili N.S Y Wiwili Jinotega, La Rica, Yali, Mulukuku, Rancho grande, San Rafael, El Cua y más."
+  },
+  {
+    "id": "LqZLgRN9co0alqqkqIWq",
+    "iurl": "/storage/radios/el-evangelio-cambia-radio-venezuela-radio.png.webp",
+    "descripcion": "El Evangelio Cambia Radio es una emisora que tiene como propósito brindar a sus oyentes herramientas que les ayuden a mejorar su calidad de vida a través del mensaje de Jesús.",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/el-evangelio-cambia-radio-venezuela-radio.png.webp",
+    "url": "https://cloudstream2036.conectarhosting.com/8062/stream",
+    "titulo": "El Evangelio Cambia Radio"
+  },
+  {
+    "id": "NKdJKMSQ2ypSkpGwIq2T",
+    "iurl": "/storage/radios/kairos.jpg",
+    "descripcion": "Kairos FM es una alternativa musical de comunicación cuya visión se extiende desde esta nación centroamericana al resto del mundo para echar la red cada día por la palabra de Dios. KAIROS FM representa el tiempo de Dios para las naciones.",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/kairos.jpg",
+    "url": "https://c7.radioboss.fm:18255/KAIROSFM",
+    "titulo": "Kairos FM"
+  },
+  {
+    "id": "SrSJDtxO7HKisMw8N9ON",
+    "titulo": "Adora Radio FM",
+    "url": "https://stream1.305stream.com/proxy/client310?mp=/stream",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/AdoraRadioFM.png",
+    "descripcion": "Adora Radio FM es una emisora Cristiana que busca compartir el evangelio de nuestro señor Jesucristo, a través de prédicas apegadas a la palabra de Dios, y con música cristiana que busca edificar a las personas en tiempos difíciles.",
+    "iurl": "/storage/radios/AdoraRadioFM.png"
+  },
+  {
+    "id": "UQO3xj4vJGwSsEq6KNpK",
+    "iurl": "/storage/radios/almaVision.jpg",
+    "descripcion": "Almavision Radio 87.7 FM y 1500AM, es actualmente la estación cristiana en español de mayor cobertura en el Sur de la Florida y cuenta con los talentos y presentadores más reconocidos del mundo cristiano.",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/almaVision.jpg",
+    "titulo": "Almavision Miami",
+    "url": "http://94.23.30.114:8318/weys"
+  },
+  {
+    "id": "VBV7GTDkoIqhgShj50nB",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/holyfireradio.png",
+    "titulo": "Holy Fire Radio",
+    "url": "http://vip.livecastnet.com:8000/holyfireradio.mp3",
+    "iurl": "/storage/radios/holyfireradio.png",
+    "descripcion": "Desde Jacksonville, Florida para el mundo, una radio cristiana transmitiendo 24 horas al día con la música muy bien seleccionada con el propósito de exaltar el nombre de nuestro señor Jesucristo ,mensajes en vivo y grabados."
+  },
+  {
+    "id": "VHnyrE49ueeSMLCnRB1B",
+    "iurl": "/storage/radios/casa-roca-radio-colombia.webp",
+    "descripcion": "Casa Roca Radio, emisora cristiana de Casa Sobre la Roca. En esta emisora podrás escuchar contenido altamente impactante para tu vida: mensajes, testimonios, música y palabra que puede ayudarte a alimentarte espiritualmente.",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/casa-roca-radio-colombia.webp",
+    "titulo": "Casa Roca Radio",
+    "url": "https://radiolatina.info/8002/stream"
+  },
+  {
+    "id": "Vrf8jthKCeR2oPvG9dyW",
+    "url": "https://stream2.305stream.com/proxy/client136?mp=/stream?mp=/;",
+    "titulo": "Dios Es Todo Para Mi Radio",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/diosestodoparami.jpg",
+    "descripcion": "Dios Es Todo Para Mi Radio es una emisora radial cristiana sin fines de lucro, tiene como característica el propósito expreso de transmitir el mensaje de vida, Palabra de Dios y la sana doctrina a todo el mundo.",
+    "iurl": "/storage/radios/diosestodoparami.jpg"
+  },
+  {
+    "id": "bf2KGN5mqr1JzdgMU2l7",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/La-Voz-de-Jesu2581s-102.3-FM.png.webp",
+    "url": "http://5.135.183.124:8028/stream",
+    "titulo": "La Voz de Jesús",
+    "iurl": "/storage/radios/La-Voz-de-Jesu2581s-102.3-FM.png.webp",
+    "descripcion": "La Voz de Jesús es una emisora guatemalteca que difunde la palabra de Jésus."
+  },
+  {
+    "id": "cgGbPqQo1ET4JQ2UdcrS",
+    "descripcion": "Compartimos a Cristo, el evangelio y las verdades bíblicas que transforman vidas para la eternidad",
+    "iurl": "/storage/radios/bbn.png",
+    "url": "https://audio-edge-es6pf.mia.g.radiomast.io/475ebed1-595e-4717-b888-64fe8fc6b09f",
+    "titulo": "BBN",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/bbn.png"
+  },
+  {
+    "id": "g83cJdSpywRmrEbNbDgY",
+    "iurl": "/storage/radios/christian-family-radio-united-states.webp",
+    "descripcion": "Showcasing Godâ€™s glory through your story with life-changing media.",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/christian-family-radio-united-states.webp",
+    "titulo": "Christian Family Radio",
+    "url": "https://ice24.securenetsystems.net/WCVK"
+  },
+  {
+    "id": "j84QmKQkjn11yOdTazhj",
+    "iurl": "/storage/radios/hermosaradio.jpg",
+    "descripcion": "Hermosa Radio es la radio oficial del Templo La Hermosa en Tijuana, Mexico. Es una radio que transmite palabras de aliento para tu vida.",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/hermosaradio.jpg",
+    "titulo": "Hermosa Radio",
+    "url": "https://stream9.mexiserver.com/8078/stream"
+  },
+  {
+    "id": "pLy7ACRBCS4VjoROkQtH",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/dun-radio.jpg",
+    "url": "https://usa10.fastcast4u.com:1410/stream",
+    "titulo": "Dun Radio",
+    "iurl": "/storage/radios/dun-radio.jpg",
+    "descripcion": "Escucha Música Cristiana 24/7, Programas hablados y contenido que edifica tu espíritu!"
+  },
+  {
+    "id": "uTxPHtYEMVvUTwrQvzvI",
+    "descripcion": "Emisora Virtual La Estación del Cielo. Radio Gospel. Transmitiendo desde Cali, Colombia.",
+    "iurl": "/storage/radios/estacioncielo.jpg",
+    "titulo": "La Estación Del Cielo",
+    "url": "http://stream.integracionvirtual.com:8037/live",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/estacioncielo.jpg"
+  },
+  {
+    "id": "yZEEeB3QMQkAUDMbqmk5",
+    "imagen": "gs://app-cristian-ccbf3.appspot.com/radios/alfinrock.png",
+    "titulo": "Al fin Rock",
+    "url": "https://stream-47.zeno.fm/xygvbwnn2nhvv?zs=k4B5nxUrR5-7zl7w0xBnMA",
+    "descripcion": "Generando Rock Cristiano",
+    "iurl": "/storage/radios/alfinrock.png"
+  }
+]

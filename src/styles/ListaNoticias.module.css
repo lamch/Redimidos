@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
+
+.blog{
+    display: grid;
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+
+.a{
+    color: black;
+}
+
+.margen{
+    margin: 2rem;
+}
+
+.centro{
+    text-align: center;
+}
+
+.center {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  }
+
+  .padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .padding {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .padding {
+      padding-left: 20rem;
+      padding-right: 20rem;
+    }
+  }
+.boton{
+    font-size: 40px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .blog{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(min-width: 992px){
+    .blog{
+        grid-template-columns: repeat(3,1fr); 
+    }
+}
+
+
+
+
+

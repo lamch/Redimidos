@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
+
+.blog{
+    display: grid;
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+
+.a{
+    color: black;
+}
+
+.a:hover {
+    color: #00bfff; 
+    transition: color 0.5s ease;
+  }
+  
+  /* También se puede cambiar el cursor */
+  .a:hover {
+    color: linear-gradient(#00bfff, #8087D8);
+    cursor: pointer; 
+  }
+  
+ 
+  
+  .a:hover {
+    color: linear-gradient(#00bfff, #8087D8);
+  }
+
+
+
+
+
+  
+  .a {
+    background-image: linear-gradient(
+      to right,
+      rgb(115, 250, 200),
+      #54b3d6 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .a:before{
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .a:hover {
+   background-position: 0;
+  }
+  
+  .a:hover::before{
+    width: 100%;
+  }
+
+
+.enlace {
+    text-decoration: none;
+    
+  }
+  
+
+.boton{
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.margen{
+    margin: 2rem;
+}
+
+.centro{
+    text-align: center;
+}
+
+.center {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  }
+
+
+
+@media (min-width: 768px) {
+    .blog{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(min-width: 992px){
+    .blog{
+        grid-template-columns: repeat(3,1fr); 
+    }
+}
+
+
+
+
+

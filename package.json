@@ -1,0 +1,37 @@
+{
+  "name": "redimidos",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.1",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@nextui-org/react": "^1.0.0-beta.12",
+    "bootstrap": "^5.2.3",
+    "fecha": "^4.2.3",
+    "framer-motion": "^10.2.3",
+    "html-react-parser": "^3.0.12",
+    "next": "14.2.29",
+    "react": "18.2.0",
+    "react-audio-player": "^0.17.0",
+    "react-dom": "18.2.0",
+    "react-grid-gallery": "^1.0.0",
+    "react-h5-audio-player": "^3.8.6",
+    "react-icons": "^4.8.0",
+    "react-player": "^2.12.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-slick": "^0.29.0",
+    "react-visual-grid": "^0.9.0",
+    "yet-another-react-lightbox": "^2.6.1"
+  },
+  "devDependencies": {
+    "eslint": "8.35.0",
+    "eslint-config-next": "14.2.29"
+  }
+}

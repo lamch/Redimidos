@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1qvo0uCVJCvgKhRTXnPo",
+    "nombre": "Sanación",
+    "url": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/categorias%2FSanacion.jpg?alt=media&token=175d0c44-74d0-499b-a48f-958a72d3f54a"
+  },
+  {
+    "id": "2KzJ4BTuKdZO8hlxzBL2",
+    "nombre": "Perdón",
+    "url": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/categorias%2Fperdon.jpg?alt=media&token=35dec249-a2cf-4d88-9460-33998ef6be8b"
+  },
+  {
+    "id": "LELXFdKRiSbxLg1Cq2o3",
+    "url": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/categorias%2FPaz.jpg?alt=media&token=254aa81a-609b-4984-95b2-3632cf76c509",
+    "nombre": "Paz"
+  },
+  {
+    "id": "OiiHbh9W60M3o55A5kLL",
+    "nombre": "Dar",
+    "url": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/categorias%2FDar.jpg?alt=media&token=528aada5-fc1e-4094-bf0a-10d36a13686d"
+  },
+  {
+    "id": "PMLb7fiAC6httNozmmuX",
+    "url": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/categorias%2Ffamilia.jpg?alt=media&token=e99f2edb-9373-4254-bb3c-11a90d8708c0",
+    "nombre": "Familia"
+  },
+  {
+    "id": "QDDTrYHyj9cjol62I0bq",
+    "url": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/categorias%2Fenfermedad.jpg?alt=media&token=4cab88b8-6371-4201-bc4f-d0c52ad5a465",
+    "nombre": "Enfermedad"
+  },
+  {
+    "id": "cghF3xQ11fOTc3ex3J3v",
+    "nombre": "Angustia",
+    "url": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/categorias%2Fangustia.jpg?alt=media&token=22fb4ccf-4bf7-4f1f-b7ad-4cff558b725b"
+  },
+  {
+    "id": "hJmruAkfrhrRelUQH7sJ",
+    "url": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/categorias%2FAnimaciones.jpg?alt=media&token=e230b7e2-48fc-4b6f-8fda-865cb4b31dd9",
+    "nombre": "Animaciones"
+  },
+  {
+    "id": "jUfzBreX1N9jDaj8vvpR",
+    "nombre": "Victoria",
+    "url": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/categorias%2Fvictoria.jpg?alt=media&token=edb56221-f9d0-4d6e-af5a-69c15edb7616"
+  },
+  {
+    "id": "kQ4E73wOpaNAeDNemQPd",
+    "nombre": "Tentación",
+    "url": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/categorias%2FTentacion.jpg?alt=media&token=02a10c47-7465-4295-b78e-ea5b55849063"
+  },
+  {
+    "id": "kW2zfsZuUZWbua5wOefB",
+    "nombre": "Oración",
+    "url": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/categorias%2Foracion.jpg?alt=media&token=e6061345-47f7-49ec-940f-07c5205d3b0d"
+  },
+  {
+    "id": "yW1Ow2QRTNchc4aIDyGk",
+    "nombre": "Felicidad",
+    "url": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/categorias%2Ffelicidad.jpg?alt=media&token=527faefd-4865-48d3-8e60-14db37ba072d"
+  }
+]
