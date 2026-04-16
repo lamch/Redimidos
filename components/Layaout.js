@@ -45,6 +45,9 @@ const Layout = ({ children, pagina, descripcion, imagen, url, tipo = 'website' }
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={metaUrl} />
 
+        {/* Google Search Console */}
+        <meta name="google-site-verification" content="--_PYKSDhPDf7kuN157LtngUxB65-Ibxtd1edphWC0I" />
+
         {/* Open Graph */}
         <meta property="og:type"        content={tipo} />
         <meta property="og:title"       content={title} />
