@@ -51,11 +51,11 @@
 }
 
 
-.changeColor {
-    
-    
-    font-size: "10.5em"
-  }
-  .changeColor:hover {
-    color: lightskyblue;
-  }
+.youtube {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.youtube:hover {
+    color: #ff0000;
+}

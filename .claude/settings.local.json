@@ -6,7 +6,11 @@
       "Bash(python -c \"import json,sys; radios=json.load\\(sys.stdin\\); print\\(len\\(radios\\)\\); [print\\(r['id'], '|', r.get\\('url',''\\)\\) for r in radios]\")",
       "Bash(python -c ' *)",
       "Bash(node -e ' *)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(python -c \"import os; print\\(os.environ.get\\('GITHUB_TOKEN',''\\)\\)\")",
+      "Bash(python -c \"import json,sys; commits=json.load\\(sys.stdin\\); [print\\(c['commit']['message'], '|', c['commit']['author']['date']\\) for c in commits]\")",
+      "Bash(cat next.config.js)",
+      "Bash(cat next.config.mjs)"
     ]
   }
 }

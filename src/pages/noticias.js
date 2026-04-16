@@ -6,7 +6,7 @@ import { getNoticias, serializarNoticias } from '../../lib/data';
 
 export default function Home({ todos }) {
   return (
-    <Layout pagina='Noticias'>
+    <Layout pagina='Noticias' descripcion='Todas las noticias cristianas. Entérate de lo último en el mundo cristiano.' url='/noticias'>
       <main className='contenedor'>
         <h2 className='heading'>Todas las noticias</h2>
         <div className={stylesBlog.blog}>

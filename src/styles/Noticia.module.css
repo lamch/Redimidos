@@ -143,14 +143,25 @@
 }
 
 .contenidoNoticia {
-  font-size: 1.15rem;
-  line-height: 1.8;
+  font-size: 1.8rem;
+  line-height: 1.7;
   color: #222;
   text-align: justify;
 }
 
+.contenidoNoticia * {
+  font-size: inherit !important;
+  font-family: inherit !important;
+  line-height: inherit !important;
+}
+
 .contenidoNoticia p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.contenidoNoticia strong,
+.contenidoNoticia b {
+  font-weight: 700;
 }
 
 .contenidoNoticia img {
