@@ -1,4 +1,4 @@
-import { getNoticias, serializarNoticias } from '../../../lib/data';
+import { getNoticias, serializarNoticias } from '../../lib/data';
 
 const SITE_URL = 'https://redimidos.net';
 
