@@ -72,7 +72,7 @@ const EntradaBlog = ({ id, noticia, relacionadas, ultimos }) => {
         <h1>Últimas noticias</h1>
         <div className={stylesBlog.grilla}>
           {ultimos.map(entrada => (
-            <Entrada key={entrada.id} entrada={entrada} />
+            <Entrada key={entrada.id} entrada={entrada} height="350px" />
           ))}
         </div>
       </div>

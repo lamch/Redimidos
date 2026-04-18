@@ -5,7 +5,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 // Puede usarse como página (/imagen/recientes) o como componente embebido
-const Recientes = ({ id = 'recientes', asPage = false }) => {
+const Recientes = ({ id = 'recientes', asPage = false, limit = null }) => {
   const [files, setFiles] = useState([]);
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(-1);
@@ -22,10 +22,12 @@ const Recientes = ({ id = 'recientes', asPage = false }) => {
     setOpen(true);
   };
 
+  const imagenesMostradas = limit ? files.slice(-limit) : files;
+
   const contenido = (
     <div>
       <Gallery
-        images={files}
+        images={imagenesMostradas}
         rowHeight={500}
         onClick={handleClick}
         enableImageSelection={false}
@@ -33,7 +35,7 @@ const Recientes = ({ id = 'recientes', asPage = false }) => {
       <Lightbox
         open={open}
         close={() => setOpen(false)}
-        slides={files}
+        slides={imagenesMostradas}
         index={index}
       />
     </div>

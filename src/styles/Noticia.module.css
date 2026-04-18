@@ -58,20 +58,9 @@
 }
 
 .a:hover {
-    color: #00bfff; 
+    color: #FF6600;
     transition: color 0.5s ease;
-  }
-  
-  /* También se puede cambiar el cursor */
-  .a:hover {
-    color: linear-gradient(#00bfff, #8087D8);
-    cursor: pointer; 
-  }
-  
- 
-  
-  .a:hover {
-    color: linear-gradient(#00bfff, #8087D8);
+    cursor: pointer;
   }
 
 
@@ -82,8 +71,8 @@
   .a {
     background-image: linear-gradient(
       to right,
-      rgb(4, 180, 115),
-      #54b3d6 50%,
+      #FF6600,
+      #FF4500 50%,
       #000 50%
     );
     background-size: 200% 100%;
@@ -100,7 +89,7 @@
   
   .a:before{
     content: '';
-    background: #54b3d6;
+    background: linear-gradient(to right, #FF6600, #FF4500);
     display: block;
     position: absolute;
     bottom: -3px;

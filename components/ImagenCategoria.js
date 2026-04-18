@@ -15,8 +15,8 @@ const ImagenCategoria = ({ entrada }) => {
                 src={url}
                 alt={nombre}
                 width={500}
-                height={600}
-                responsive
+                height={500}
+                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             />
 
            

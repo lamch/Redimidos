@@ -1,8 +1,18 @@
+@keyframes headerGlow {
+  0%, 100% { box-shadow: 0 4px 20px rgba(255, 102, 0, 0.6), 0 0 40px rgba(255, 69, 0, 0.3); }
+  50%       { box-shadow: 0 4px 40px rgba(255, 140, 0, 1),   0 0 80px rgba(255, 69, 0, 0.7); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+
 .header {
-background-image: linear-gradient(to right, rgb(0 0 0 / .6) , rgb(0 0 0 / .5)),url('../../public/img/header4.jpg');
-background-size: cover;
-background-position: 50%;
-padding: 2rem 0;
+  background: linear-gradient(135deg, #1a0a00 0%, #3d1200 50%, #1a0a00 100%);
+  padding: 0.5rem 0;
+  border-bottom: 3px solid #FF6600;
+  animation: headerGlow 3s ease-in-out infinite, slideDown 0.6s ease-out;
 }
 
 
@@ -22,7 +32,7 @@ padding: 2rem 0;
 
 
 .navegacion{
-    margin-top: 5rem;
+    margin-top: 0;
     display: flex;
     gap: 2rem;
     list-style: none;
@@ -54,15 +64,47 @@ padding: 2rem 0;
     
 }
 
-  .customtoggler {
-    color: var(--blanco);
-    text-decoration: none;    
-    text-transform: uppercase;    
-    transition-property: background-color;
-    transition-duration: .3s;
+@keyframes linkEntrance {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-.customtoggler:hover{
-    background-color: var(--primary);
-    color: white;
-  }
+@keyframes pulse-glow {
+  0%, 100% { text-shadow: 0 0 8px #FF6600, 0 0 20px #FF4500; }
+  50%       { text-shadow: 0 0 16px #FF6600, 0 0 40px #FF4500, 0 0 60px #FF2200; }
+}
+
+.customtoggler {
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: color .3s, transform .3s, text-shadow .3s;
+    animation: linkEntrance 0.6s ease-out both;
+    position: relative;
+}
+
+.customtoggler::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #FF6600, #FF4500);
+    transition: width 0.3s ease;
+    box-shadow: 0 0 8px #FF6600;
+}
+
+.customtoggler:hover {
+    color: #FF6600;
+    text-shadow: 0 0 8px #FF6600, 0 0 20px #FF4500;
+    transform: scale(1.15);
+    display: inline-block;
+    animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+.customtoggler:hover::after {
+    width: 100%;
+}

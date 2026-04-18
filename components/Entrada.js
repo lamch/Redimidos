@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../src/styles/Entrada.module.css'
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
 
-const Entrada = ({ entrada }) => {
+const Entrada = ({ entrada, height = "550px" }) => {
     const { titulo, fecha, id, imagen, categoria } = entrada;
 
     const fechaFormateada = (() => {
@@ -17,13 +17,13 @@ const Entrada = ({ entrada }) => {
     return (
         <Link href={`/noticias/${id}`} className={styles.enlace}>
             <Card hoverable clickable width="100%" css={{
-                w: "100%", h: "550px",
+                w: "100%", h: height,
                 '&:hover': { background: '$pink100', color: '$pink800' }
             }}>
                 <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
                     <Col>
                         <Row justify="center">
-                            <Button flat auto rounded css={{ color: "#94f9f0", bg: "#94f9f026" }}>
+                            <Button flat auto rounded css={{ color: "#fff", bg: "linear-gradient(135deg, #FF6600, #FF4500)" }}>
                                 <Text css={{ color: "inherit" }} size={18} weight="bold" transform="uppercase">
                                     {categoria}
                                 </Text>
@@ -46,7 +46,7 @@ const Entrada = ({ entrada }) => {
                             <Text size={26} h2 color="white">{titulo}</Text>
                             <Col>
                                 <Row justify="center">
-                                    <Button flat auto rounded css={{ color: "#94f9f0", bg: "#94f9f026" }}>
+                                    <Button flat auto rounded css={{ color: "#fff", bg: "linear-gradient(135deg, #FF6600, #FF4500)" }}>
                                         <Text css={{ color: "inherit" }} size={12} weight="bold" transform="uppercase">
                                             {fechaFormateada}
                                         </Text>

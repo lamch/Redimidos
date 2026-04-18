@@ -40,7 +40,7 @@ export default function Home({ titular, todos, ultimoVideo }) {
 
         <div className={stylesBlog.blog}>
           {todos.map(entrada => (
-            <Entrada key={entrada.id} entrada={entrada} />
+            <Entrada key={entrada.id} entrada={entrada} height="350px" />
           ))}
         </div>
 
@@ -64,7 +64,7 @@ export default function Home({ titular, todos, ultimoVideo }) {
 
         <div className={stylesBlog.center}>
           <h2 className='heading'>Últimas Imagenes</h2>
-          <Recientes id="recientes" />
+          <Recientes id="recientes" limit={3} />
         </div>
       </main>
     </Layout>

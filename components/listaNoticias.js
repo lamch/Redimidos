@@ -20,7 +20,7 @@ const listaNoticias = ({ entrada }) => {
                 <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
                     <Col>
                         <Row justify="center">
-                            <Button flat auto rounded css={{ color: "#94f9f0", bg: "#94f9f026" }}>
+                            <Button flat auto rounded css={{ color: "#fff", bg: "linear-gradient(135deg, #FF6600, #FF4500)" }}>
                                 <Text css={{ color: "inherit" }} size={15} weight="bold" transform="uppercase">
                                     {categoria}
                                 </Text>
@@ -43,7 +43,7 @@ const listaNoticias = ({ entrada }) => {
                             <Text size={18} h2 color="white">{titulo}</Text>
                             <Col>
                                 <Row justify="center">
-                                    <Button flat auto rounded css={{ color: "#94f9f0", bg: "#94f9f026" }}>
+                                    <Button flat auto rounded css={{ color: "#fff", bg: "linear-gradient(135deg, #FF6600, #FF4500)" }}>
                                         <Text css={{ color: "inherit" }} size={12} weight="bold" transform="uppercase">
                                             {fechaFormateada}
                                         </Text>

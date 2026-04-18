@@ -39,6 +39,12 @@ const Layout = ({ children, pagina, descripcion, imagen, url, tipo = 'website' }
 
   return (
     <div>
+      <div className="bgArea">
+        <ul className="bgCircles">
+          <li/><li/><li/><li/><li/>
+          <li/><li/><li/><li/><li/>
+        </ul>
+      </div>
       <Head>
         <title>{title}</title>
         <meta name="description" content={metaDesc} />

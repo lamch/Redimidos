@@ -15,8 +15,80 @@ body {
   font-size: 2rem;
   font-family: var(--fuente-principal);
   line-height: 1.5;
-  background: #7f7fd5;
-  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(135deg, #fff3e0, #ffb74d, #ff9800);
+  min-height: 100vh;
+}
+
+/* ── Animación de fondo con círculos flotantes ── */
+.bgArea {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background: linear-gradient(135deg, #fff3e0, #ffb74d, #ff9800);
+}
+
+.bgCircles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bgCircles li {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  animation: floatUp 25s linear infinite;
+  bottom: -150px;
+}
+
+.bgCircles li::before,
+.bgCircles li::after {
+  content: '';
+  position: absolute;
+  background: rgba(255, 100, 0, 0.6);
+  border-radius: 2px;
+}
+
+.bgCircles li::before {
+  width: 100%;
+  height: 30%;
+  top: 35%;
+  left: 0;
+}
+
+.bgCircles li::after {
+  width: 30%;
+  height: 100%;
+  top: 0;
+  left: 35%;
+}
+
+.bgCircles li:nth-child(1)  { left: 25%; width: 80px;  height: 80px;  animation-delay: 0s; }
+.bgCircles li:nth-child(2)  { left: 10%; width: 20px;  height: 20px;  animation-delay: 2s;  animation-duration: 12s; }
+.bgCircles li:nth-child(3)  { left: 70%; width: 20px;  height: 20px;  animation-delay: 4s; }
+.bgCircles li:nth-child(4)  { left: 40%; width: 60px;  height: 60px;  animation-delay: 0s;  animation-duration: 18s; }
+.bgCircles li:nth-child(5)  { left: 65%; width: 20px;  height: 20px;  animation-delay: 0s; }
+.bgCircles li:nth-child(6)  { left: 75%; width: 110px; height: 110px; animation-delay: 3s; }
+.bgCircles li:nth-child(7)  { left: 35%; width: 150px; height: 150px; animation-delay: 7s; }
+.bgCircles li:nth-child(8)  { left: 50%; width: 25px;  height: 25px;  animation-delay: 15s; animation-duration: 45s; }
+.bgCircles li:nth-child(9)  { left: 20%; width: 15px;  height: 15px;  animation-delay: 2s;  animation-duration: 35s; }
+.bgCircles li:nth-child(10) { left: 85%; width: 150px; height: 150px; animation-delay: 0s;  animation-duration: 11s; }
+
+@keyframes floatUp {
+  0%   { transform: translateY(0) rotate(0deg);     opacity: 1; border-radius: 4px; }
+  100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; border-radius: 50%; }
 }
 img {
   max-width: 100%;
@@ -33,6 +105,30 @@ img {
   font-weight: 900;
   color: var(--blanco);
   margin: 5rem 0;
+}
+
+/* Override global para todos los botones Bootstrap */
+.btn-primary,
+.btn-outline-primary {
+  background: linear-gradient(135deg, #FF8C00, #FF4500) !important;
+  border-color: #FF6600 !important;
+  color: #fff !important;
+  box-shadow: 0 4px 14px rgba(255, 102, 0, 0.35);
+  transition: box-shadow 0.3s, opacity 0.3s;
+}
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  opacity: 0.88;
+  box-shadow: 0 6px 20px rgba(255, 69, 0, 0.55) !important;
+}
+
+.btn-outline-warning {
+  border-color: #FF6600 !important;
+  color: #FF6600 !important;
+}
+.btn-outline-warning:hover {
+  background: linear-gradient(135deg, #FF8C00, #FF4500) !important;
+  color: #fff !important;
 }
 
 
