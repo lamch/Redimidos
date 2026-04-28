@@ -11,7 +11,14 @@
       "Bash(python -c \"import json,sys; commits=json.load\\(sys.stdin\\); [print\\(c['commit']['message'], '|', c['commit']['author']['date']\\) for c in commits]\")",
       "Bash(cat next.config.js)",
       "Bash(cat next.config.mjs)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "Bash(mkdir -p \"D:\\\\Proyectos\\\\Redimidos-main\\\\Redimidos-main\\\\src\\\\app\\\\api\\\\bot-noticias\")",
+      "Bash(mkdir -p \"D:\\\\Proyectos\\\\Redimidos-main\\\\Redimidos-main\\\\scripts\")",
+      "Bash(mkdir -p \"D:\\\\Proyectos\\\\Redimidos-main\\\\Redimidos-main\\\\.github\\\\workflows\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
