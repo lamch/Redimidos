@@ -1,0 +1,62 @@
+name: 🕊️ Bot Noticias Cristianas
+
+on:
+  # Cada mañana a las 7:00 AM hora Bolivia (UTC-4) = 11:00 AM UTC
+  schedule:
+    - cron: "0 11 * * *"
+
+  # Ejecutar manualmente desde GitHub → Actions → Run workflow
+  workflow_dispatch:
+    inputs:
+      cantidad:
+        description: "Número de noticias a publicar"
+        required: false
+        default: "5"
+        type: string
+      dry_run:
+        description: "Dry run (ver resultado sin guardar)"
+        required: false
+        default: "false"
+        type: boolean
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    name: Generar y publicar noticias del día
+
+    steps:
+      - name: 📥 Clonar repositorio
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: ⚙️ Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 📦 Instalar dependencias
+        run: npm install
+
+      # ── Llama al endpoint del bot desplegado en Vercel ──────────────────────
+      # El bot recopila noticias → Claude las procesa → devuelve JSON
+      # Este step escribe el resultado en public/data/noticias.json
+      - name: 🤖 Ejecutar bot y actualizar noticias.json
+        env:
+          VERCEL_URL: ${{ secrets.VERCEL_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          CANTIDAD: ${{ github.event.inputs.cantidad || '5' }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+        run: |
+          node scripts/actualizar-noticias.js
+
+      # ── Solo si NO es dry-run, hacer commit y push ───────────────────────────
+      - name: 💾 Commit y push de noticias actualizadas
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "Redimidos Bot"
+          git config user.email "bot@redimidos.net"
+          git add public/data/noticias.json
+          # Solo commitear si hay cambios
+          git diff --staged --quiet || git commit -m "🕊️ Noticias del día $(date +'%d/%m/%Y')"
+          git push
