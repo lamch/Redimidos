@@ -156,7 +156,7 @@ export async function POST(request) {
 
   const { searchParams } = new URL(request.url);
   const dryRun   = searchParams.get("dry") === "true";
-  const cantidad = parseInt(searchParams.get("cantidad") || "5");
+  const cantidad = parseInt(searchParams.get("cantidad") || "1");
 
   try {
     const todas = [];
