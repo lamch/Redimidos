@@ -97,16 +97,27 @@ ${texto}
 Selecciona las ${cantidad} más relevantes e importantes para el lector cristiano latinoamericano.
 
 Para cada una genera:
-1. Un título en español (máximo 80 caracteres), atractivo y edificante
-2. Un artículo completo en HTML en español (500-700 palabras). Usa etiquetas <p>, <h2>, <strong>, <em>, <blockquote>. Tono cercano, pastoral, con perspectiva bíblica. Puedes citar versículos bíblicos relevantes.
-3. Una categoría EXACTAMENTE de esta lista: ${CATEGORIAS.join(" | ")}
-4. Tres palabras en inglés para buscar una imagen relevante en Unsplash
+
+1. TÍTULO en español (máximo 80 caracteres), atractivo y edificante.
+
+2. ARTÍCULO completo en HTML en español (800-1000 palabras) con esta estructura:
+   - Párrafo de introducción llamativo (2-3 oraciones que enganchen al lector)
+   - <h2> para cada sección temática (mínimo 3 secciones)
+   - Dentro del texto, cuando menciones el nombre de un álbum, canción, ministerio, iglesia, organización o evento relevante, conviértelo en un enlace HTML: <a href="URL_FUENTE" target="_blank" rel="noopener">nombre</a> usando la URL de la fuente original.
+   - Usa <p>, <h2>, <strong>, <em>, <blockquote> con tono cercano, pastoral y perspectiva bíblica.
+   - Cita al menos un versículo bíblico relevante dentro de un <blockquote>.
+   - Al final del artículo agrega una sección de fuente así:
+     <p class="fuente-articulo">Fuente: <a href="URL_FUENTE" target="_blank" rel="noopener">NOMBRE_FUENTE</a></p>
+
+3. CATEGORÍA exactamente de esta lista: ${CATEGORIAS.join(" | ")}
+
+4. Tres palabras en inglés para buscar imagen en Unsplash.
 
 Responde SOLO con un JSON array válido, sin texto adicional ni markdown:
 [
   {
     "titulo": "...",
-    "descripcion": "<p>...</p>",
+    "descripcion": "<p>...</p><h2>...</h2><p>...</p>...<p class=\\"fuente-articulo\\">Fuente: <a href=\\"...\\" target=\\"_blank\\">...</a></p>",
     "categoria": "...",
     "imageQuery": "...",
     "fuente": "...",
@@ -180,7 +191,7 @@ export async function POST(request) {
 
   const { searchParams } = new URL(request.url);
   const dryRun   = searchParams.get("dry") === "true";
-  const cantidad = parseInt(searchParams.get("cantidad") || "1");
+  const cantidad = parseInt(searchParams.get("cantidad") || "3");
 
   try {
     const todas = [];
