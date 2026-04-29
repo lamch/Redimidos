@@ -84,7 +84,7 @@ async function fetchFeed(feed) {
 
 async function procesarConGemini(articulos, cantidad) {
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-lite" });
 
   const texto = articulos
     .map((a, i) => `[${i + 1}] FUENTE: ${a.source}\nTÍTULO: ${a.titulo}\nDESCRIPCIÓN: ${a.descripcion}\nURL: ${a.link}`)
