@@ -1,3 +1,5 @@
+export const maxDuration = 60;
+
 /**
  * API Route: POST /api/bot-noticias
  *
