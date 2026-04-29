@@ -15,6 +15,7 @@ export const maxDuration = 60;
 
 import { NextResponse } from "next/server";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import Groq from "groq-sdk";
 import { XMLParser } from "fast-xml-parser";
 
 // ─── CATEGORÍAS (las que usa tu sitio) ───────────────────────────────────────
@@ -80,17 +81,14 @@ async function fetchFeed(feed) {
   }
 }
 
-// ─── GEMINI AI ────────────────────────────────────────────────────────────────
+// ─── AI ───────────────────────────────────────────────────────────────────────
 
-async function procesarConGemini(articulos, cantidad) {
-  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-lite" });
-
+function buildPrompt(articulos, cantidad) {
   const texto = articulos
     .map((a, i) => `[${i + 1}] FUENTE: ${a.source}\nTÍTULO: ${a.titulo}\nDESCRIPCIÓN: ${a.descripcion}\nURL: ${a.link}`)
     .join("\n\n---\n\n");
 
-  const prompt = `Eres el editor principal de Redimidos.net, un portal de noticias cristianas para América Latina.
+  return `Eres el editor principal de Redimidos.net, un portal de noticias cristianas para América Latina.
 
 Tienes estas noticias del día de distintas fuentes:
 
@@ -115,10 +113,34 @@ Responde SOLO con un JSON array válido, sin texto adicional ni markdown:
     "urlFuente": "..."
   }
 ]`;
+}
 
-  const result = await model.generateContent(prompt);
+async function procesarConGemini(articulos, cantidad) {
+  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const result = await model.generateContent(buildPrompt(articulos, cantidad));
   const raw = result.response.text().replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
   return JSON.parse(raw);
+}
+
+async function procesarConGroq(articulos, cantidad) {
+  const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+  const completion = await groq.chat.completions.create({
+    messages: [{ role: "user", content: buildPrompt(articulos, cantidad) }],
+    model: "llama-3.3-70b-versatile",
+    temperature: 0.7,
+  });
+  const raw = completion.choices[0]?.message?.content?.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
+  return JSON.parse(raw);
+}
+
+async function procesarNoticias(articulos, cantidad) {
+  try {
+    return await procesarConGemini(articulos, cantidad);
+  } catch (err) {
+    console.warn("Gemini falló, usando Groq como fallback:", err.message);
+    return await procesarConGroq(articulos, cantidad);
+  }
 }
 
 // ─── IMAGEN UNSPLASH ──────────────────────────────────────────────────────────
@@ -172,7 +194,7 @@ export async function POST(request) {
       return NextResponse.json({ error: "Sin artículos en los feeds RSS" }, { status: 500 });
     }
 
-    const generadas = await procesarConGemini(todas, cantidad);
+    const generadas = await procesarNoticias(todas, cantidad);
 
     const nuevas = [];
     for (const art of generadas) {
