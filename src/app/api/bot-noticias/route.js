@@ -85,7 +85,7 @@ async function fetchFeed(feed) {
 
 function buildPrompt(articulos, cantidad) {
   const texto = articulos
-    .map((a, i) => `[${i + 1}] FUENTE: ${a.source}\nTÍTULO: ${a.titulo}\nDESCRIPCIÓN: ${a.descripcion}\nURL: ${a.link}`)
+    .map((a, i) => `[${i + 1}] FUENTE: ${a.source}\nTÍTULO: ${a.titulo}\nDESCRIPCIÓN: ${a.descripcion}`)
     .join("\n\n---\n\n");
 
   return `Eres el editor principal de Redimidos.net, un portal de noticias cristianas para América Latina.
@@ -102,26 +102,25 @@ Para cada una genera:
 
 2. ARTÍCULO completo en HTML en español (800-1000 palabras) con esta estructura:
    - Párrafo de introducción llamativo (2-3 oraciones que enganchen al lector)
-   - <h2> para cada sección temática (mínimo 3 secciones)
-   - Dentro del texto, cuando menciones el nombre de un álbum, canción, ministerio, iglesia, organización o evento relevante, conviértelo en un enlace HTML: <a href="URL_FUENTE" target="_blank" rel="noopener">nombre</a> usando la URL de la fuente original.
-   - Usa <p>, <h2>, <strong>, <em>, <blockquote> con tono cercano, pastoral y perspectiva bíblica.
-   - Cita al menos un versículo bíblico relevante dentro de un <blockquote>.
-   - Al final del artículo agrega una sección de fuente así:
-     <p class="fuente-articulo">Fuente: <a href="URL_FUENTE" target="_blank" rel="noopener">NOMBRE_FUENTE</a></p>
+   - Mínimo 3 secciones con <h2>
+   - Usa <p>, <h2>, <strong>, <em>, <blockquote>. Tono cercano, pastoral, perspectiva bíblica.
+   - Cita al menos un versículo bíblico en un <blockquote>.
+   - NO inventes ningún enlace <a href> dentro del texto.
 
 3. CATEGORÍA exactamente de esta lista: ${CATEGORIAS.join(" | ")}
 
 4. Tres palabras en inglés para buscar imagen en Unsplash.
 
+5. El número entre corchetes [N] del artículo fuente que usaste (ej: 3).
+
 Responde SOLO con un JSON array válido, sin texto adicional ni markdown:
 [
   {
     "titulo": "...",
-    "descripcion": "<p>...</p><h2>...</h2><p>...</p>...<p class=\\"fuente-articulo\\">Fuente: <a href=\\"...\\" target=\\"_blank\\">...</a></p>",
+    "descripcion": "<p>...</p><h2>...</h2><p>...</p>",
     "categoria": "...",
     "imageQuery": "...",
-    "fuente": "...",
-    "urlFuente": "..."
+    "fuenteIndex": 1
   }
 ]`;
 }
@@ -213,14 +212,24 @@ export async function POST(request) {
       const id = slugify(art.titulo);
       const fecha = new Date().toISOString();
 
+      // Obtener fuente real desde los datos RSS usando el índice devuelto por el AI
+      const fuenteReal = todas[art.fuenteIndex - 1] || null;
+      const urlFuente  = fuenteReal?.link  || "";
+      const nombreFuente = fuenteReal?.source || "";
+
+      // Agregar sección de fuente real al final del artículo
+      const fuente = urlFuente
+        ? `<p class="fuente-articulo">Fuente: <a href="${urlFuente}" target="_blank" rel="noopener noreferrer">${nombreFuente}</a></p>`
+        : "";
+
       nuevas.push({
         id,
         titulo:      art.titulo,
         categoria:   art.categoria,
         fecha,
         imagen:      imagenUrl || "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=800&q=80",
-        descripcion: art.descripcion,
-        url:         art.urlFuente || "",
+        descripcion: art.descripcion + fuente,
+        url:         urlFuente,
       });
 
       await new Promise(r => setTimeout(r, 500));
