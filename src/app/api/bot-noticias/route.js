@@ -31,12 +31,20 @@ const CATEGORIAS = [
 // ─── FUENTES RSS ──────────────────────────────────────────────────────────────
 
 const RSS_FEEDS = [
-  { url: "https://www.protestantedigital.com/rss.xml",  source: "Protestante Digital" },
-  { url: "https://noticiascristianas.com/feed/",        source: "Noticias Cristianas"  },
-  { url: "https://www.vidacristiana.com/feed/",         source: "Vida Cristiana"       },
-  { url: "https://www.christianpost.com/rss/",          source: "Christian Post"        },
-  { url: "https://www.gospelherald.com/rss/",           source: "Gospel Herald"         },
-  { url: "https://feeds.feedburner.com/evangelicalfocus-en", source: "Evangelical Focus"},
+  { url: "https://www.protestantedigital.com/rss.xml",       source: "Protestante Digital"  },
+  { url: "https://noticiascristianas.com/feed/",             source: "Noticias Cristianas"   },
+  { url: "https://www.vidacristiana.com/feed/",              source: "Vida Cristiana"        },
+  { url: "https://www.christianpost.com/rss/",               source: "Christian Post"        },
+  { url: "https://www.gospelherald.com/rss/",                source: "Gospel Herald"         },
+  { url: "https://feeds.feedburner.com/evangelicalfocus-en", source: "Evangelical Focus"     },
+  { url: "https://www.christiantoday.com/rss.xml",           source: "Christian Today"       },
+  { url: "https://elblogdelcristiano.com/feed/",             source: "El Blog del Cristiano" },
+];
+
+// ─── FUENTES WEB (sin RSS) ────────────────────────────────────────────────────
+
+const WEB_SOURCES = [
+  { url: "https://www1.cbn.com/mundocristiano", source: "CBN Mundo Cristiano" },
 ];
 
 // ─── HELPERS ──────────────────────────────────────────────────────────────────
@@ -179,6 +187,39 @@ async function getImagen(query) {
   }
 }
 
+// ─── SCRAPING WEB ────────────────────────────────────────────────────────────
+
+async function fetchWebSource(webSource) {
+  try {
+    const res = await fetch(webSource.url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      },
+      signal: AbortSignal.timeout(12000),
+    });
+    if (!res.ok) return [];
+    const html = await res.text();
+
+    const items = [];
+    const seen = new Set();
+    // Extrae enlaces con patrón CBN: /mundocristiano/categoria/año/mes/slug
+    const re = /<a[^>]+href="(\/mundocristiano\/[^"#?]+\/\d{4}\/[^"#?]+)"[^>]*>([\s\S]*?)<\/a>/gi;
+    let m;
+    while ((m = re.exec(html)) !== null && items.length < 5) {
+      const url = `https://www1.cbn.com${m[1]}`;
+      const titulo = m[2].replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+      if (titulo.length > 10 && !seen.has(url)) {
+        seen.add(url);
+        items.push({ titulo, descripcion: titulo, link: url, source: webSource.source });
+      }
+    }
+    return items;
+  } catch {
+    return [];
+  }
+}
+
 // ─── HANDLER PRINCIPAL ────────────────────────────────────────────────────────
 
 export async function POST(request) {
@@ -196,6 +237,11 @@ export async function POST(request) {
     const todas = [];
     for (const feed of RSS_FEEDS) {
       const items = await fetchFeed(feed);
+      todas.push(...items);
+      await new Promise(r => setTimeout(r, 300));
+    }
+    for (const webSource of WEB_SOURCES) {
+      const items = await fetchWebSource(webSource);
       todas.push(...items);
       await new Promise(r => setTimeout(r, 300));
     }

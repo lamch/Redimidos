@@ -19,7 +19,12 @@
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
-      "Bash(git commit -m 'fix: cambiar modelo Gemini a gemini-2.0-flash *)"
+      "Bash(git commit -m 'fix: cambiar modelo Gemini a gemini-2.0-flash *)",
+      "WebFetch(domain:www.christiantoday.com)",
+      "WebFetch(domain:www.bibliatodo.com)",
+      "WebFetch(domain:www1.cbn.com)",
+      "WebFetch(domain:elblogdelcristiano.com)",
+      "WebFetch(domain:secure.cbn.com)"
     ]
   }
 }
