@@ -1,5 +1,32 @@
 [
   {
+    "id": "Fe-en-Accion",
+    "titulo": "Fe en Acción",
+    "categoria": "Vida",
+    "fecha": "2026-05-01T23:56:35.854Z",
+    "imagen": "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&q=80",
+    "descripcion": "<p>La fe es un aspecto fundamental de la vida cristiana. En un mundo lleno de desafíos y problemas, es fácil sentirse abrumado y perder la perspectiva. Sin embargo, la fe nos da la fuerza y la confianza para enfrentar cualquier situación.</p><h2>La importancia de la fe</h2><p>La fe es la confianza en que Dios está con nosotros y nos guía en todo momento. Es la certeza de que Él tiene un plan para nuestra vida y que nos ama incondicionalmente. <strong>La fe nos da la valentía para enfrentar los desafíos</strong> y la sabiduría para tomar decisiones acertadas.</p><h2>La fe en la práctica</h2><p>La fe no es solo una creencia, sino una forma de vida. <em>Implica poner en práctica los principios bíblicos</em> en nuestra vida diaria. Significa confiar en Dios en todo momento y buscar Su guía en cada decisión. <blockquote>\"La fe es la sustancia de las cosas que se esperan, la evidencia de las cosas que no se ven\" (Hebreos 11:1).</blockquote></p><h2>Conclusión</h2><p>La fe es un regalo precioso que Dios nos ha dado. <strong>Es la clave para vivir una vida plena y significativa</strong>. Al confiar en Dios y poner en práctica los principios bíblicos, podemos enfrentar cualquier desafío y vivir una vida de propósito y significado.</p><p class=\"fuente-articulo\">Fuente: <a href=\"https://elblogdelcristiano.com/la-importancia-de-compartir-testimonios-en-la-comunidad-cristiana/\" target=\"_blank\" rel=\"noopener noreferrer\">El Blog del Cristiano</a></p>",
+    "url": "https://elblogdelcristiano.com/la-importancia-de-compartir-testimonios-en-la-comunidad-cristiana/"
+  },
+  {
+    "id": "Perseguicion",
+    "titulo": "Perseguición",
+    "categoria": "Internacional",
+    "fecha": "2026-05-01T23:56:36.354Z",
+    "imagen": "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=800&q=80",
+    "descripcion": "<p>La persecución es una realidad para muchos cristianos en todo el mundo. A pesar de los desafíos y peligros, la fe de estos creyentes remains firme y su compromiso con Cristo es inquebrantable.</p><h2>La perseguición en la Biblia</h2><p>La persecución no es un tema nuevo en la Biblia. <em>Jesús mismo fue perseguido</em> y sufrió por nuestra salvación. <strong>La persecución es un llamado a la fe y la obediencia</strong>. <blockquote>\"Bienaventurados los perseguidos por causa de la justicia, porque de ellos es el reino de los cielos\" (Mateo 5:10).</blockquote></p><h2>La perseguición en el mundo actual</h2><p>La persecución sigue siendo una realidad en muchos países. <strong>Los cristianos son perseguidos por su fe</strong> y sufren discriminación, violencia y marginación. Es importante que los creyentes en todo el mundo se unan en oración y apoyo para aquellos que sufren por su fe.</p><h2>Conclusión</h2><p>La persecución es un desafío para la fe, pero también es una oportunidad para crecer en la fe y la obediencia. <strong>La perseverancia y la fe</strong> son clave para enfrentar la persecución y vivir una vida de propósito y significado.</p><p class=\"fuente-articulo\">Fuente: <a href=\"https://www.christianpost.com/news/evangelist-killed-by-suspected-muslim-extremists-in-uganda.html\" target=\"_blank\" rel=\"noopener noreferrer\">Christian Post</a></p>",
+    "url": "https://www.christianpost.com/news/evangelist-killed-by-suspected-muslim-extremists-in-uganda.html"
+  },
+  {
+    "id": "Gracia-de-Dios",
+    "titulo": "Gracia de Dios",
+    "categoria": "Vida",
+    "fecha": "2026-05-01T23:56:36.855Z",
+    "imagen": "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&q=80",
+    "descripcion": "<p>La gracia de Dios es un tema fundamental en la Biblia. <strong>La gracia es el amor incondicional de Dios</strong> hacia nosotros, y es la base de nuestra salvación y nuestra relación con Él.</p><h2>La gracia en la Biblia</h2><p>La gracia se menciona en muchos lugares de la Biblia. <em>Es la forma en que Dios nos ama y nos acepta</em>, a pesar de nuestros pecados y debilidades. <blockquote>\"Porque por gracia sois salvos por la fe, y esto no es de vosotros, sino don de Dios\" (Efesios 2:8).</blockquote></p><h2>La gracia en la vida diaria</h2><p>La gracia no es solo un concepto teológico, sino una realidad que se puede experimentar en la vida diaria. <strong>La gracia nos da la fuerza y la sabiduría</strong> para enfrentar los desafíos y vivir una vida de propósito y significado.</p><h2>Conclusión</h2><p>La gracia de Dios es un regalo precioso que nos da la vida y la salvación. <strong>Es la base de nuestra fe y nuestra relación con Dios</strong>. Al confiar en la gracia de Dios, podemos vivir una vida de propósito y significado, y experimentar la paz y la alegría que solo Él puede dar.</p><p class=\"fuente-articulo\">Fuente: <a href=\"https://www1.cbn.com/mundocristiano/estados-unidos/2026/april/laquo-por-la-gracia-de-dios-raquo-los-supervivientes-del-tornado-de-texas-califican-de-laquo-milagroso-raquo\" target=\"_blank\" rel=\"noopener noreferrer\">CBN Mundo Cristiano</a></p>",
+    "url": "https://www1.cbn.com/mundocristiano/estados-unidos/2026/april/laquo-por-la-gracia-de-dios-raquo-los-supervivientes-del-tornado-de-texas-califican-de-laquo-milagroso-raquo"
+  },
+  {
     "id": "Pastores-se-pronuncian",
     "titulo": "Pastores se pronuncian",
     "categoria": "Internacional",
