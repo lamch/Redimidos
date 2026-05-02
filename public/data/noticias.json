@@ -1,5 +1,14 @@
 [
   {
+    "id": "Evangelismo",
+    "titulo": "Evangelismo",
+    "categoria": "Ministerio",
+    "fecha": "2026-05-02T11:38:14.403Z",
+    "imagen": "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&q=80",
+    "descripcion": "<p>El evangelismo es una parte fundamental de la vida cristiana. Como creyentes, tenemos el mandato de compartir el evangelio con los demás y hacer discípulos de todas las naciones.</p><h2>La importancia del evangelismo</h2><p>En el libro de Mateo, capítulo 28, versículos 18-20, Jesús nos da el <blockquote>mandato grande</blockquote> de hacer discípulos de todas las naciones. Esto nos recuerda que el evangelismo es una responsabilidad de todos los creyentes.</p><h2>Ejemplos de evangelismo</h2><p>En la historia de la iglesia, hay muchos ejemplos de creyentes que han sido efectivos en el evangelismo. Desde el apóstol Pablo, que predicó el evangelio en todo el mundo conocido en su época, hasta personas comunes que han compartido su fe con amigos y familiares.</p><h2>Desafíos y oportunidades</h2><p>Hoy en día, hay muchas oportunidades para compartir el evangelio con los demás. Ya sea a través de la predicación, el testimonio personal o simplemente siendo una presencia positiva en nuestra comunidad, todos podemos hacer una diferencia.</p><p class=\"fuente-articulo\">Fuente: <a href=\"https://elblogdelcristiano.com/franklin-graham-se-prepara-para-el-evento-evangelistico-mas-grande-de-europa-en-25-anos/\" target=\"_blank\" rel=\"noopener noreferrer\">El Blog del Cristiano</a></p>",
+    "url": "https://elblogdelcristiano.com/franklin-graham-se-prepara-para-el-evento-evangelistico-mas-grande-de-europa-en-25-anos/"
+  },
+  {
     "id": "Fe-en-Accion",
     "titulo": "Fe en Acción",
     "categoria": "Vida",
