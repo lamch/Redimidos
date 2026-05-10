@@ -1,5 +1,14 @@
 [
   {
+    "id": "Testimonio",
+    "titulo": "Testimonio",
+    "categoria": "Ministerio",
+    "fecha": "2026-05-10T11:42:17.666Z",
+    "imagen": "https://images.unsplash.com/photo-1519791883288-dc8bd696e667?w=800&q=80",
+    "descripcion": "<p>El testimonio es una herramienta poderosa para compartir la fe con otros. En un mundo donde la gente busca respuestas y significado, <strong>el testimonio personal</strong> puede ser un faro de esperanza. En este artículo, exploraremos cómo compartir el testimonio de manera efectiva.</p><h2>La Importancia del Testimonio</h2><p>El testimonio es esencial para compartir la fe con otros. <em>No se trata de ser un experto</em>, sino de ser auténtico y transparente en la experiencia personal. <blockquote>1 Pedro 3:15</blockquote> nos dice que debemos <strong>estar siempre preparados</strong> para dar una razón de la esperanza que hay en nosotros.</p><h2>Consejos para Compartir el Testimonio</h2><p>Para compartir el testimonio de manera efectiva, es importante <strong>ser auténtico y honesto</strong> en la experiencia personal. También es fundamental <em>escuchar activamente</em> a los demás y buscar oportunidades para compartir la fe. Además, <strong>la oración</strong> es clave para pedir la guía y el poder de Dios en el testimonio.</p><h2>Ejemplos Bíblicos de Testimonio</h2><p>La Biblia está llena de ejemplos de personas que compartieron su testimonio de manera efectiva. <strong>El apóstol Pablo</strong> es un ejemplo clásico de cómo el testimonio personal puede llevar a la conversión y el crecimiento espiritual.</p><p class=\"fuente-articulo\">Fuente: <a href=\"https://elblogdelcristiano.com/kelsey-grammer-confiesa-que-casi-pierde-la-fe-tras-el-asesinato-de-su-hermana/\" target=\"_blank\" rel=\"noopener noreferrer\">El Blog del Cristiano</a></p>",
+    "url": "https://elblogdelcristiano.com/kelsey-grammer-confiesa-que-casi-pierde-la-fe-tras-el-asesinato-de-su-hermana/"
+  },
+  {
     "id": "Compartir-testimonios",
     "titulo": "Compartir testimonios",
     "categoria": "Ministerio",
