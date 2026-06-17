@@ -1,5 +1,14 @@
 [
   {
+    "id": "Eventos-evangelisticos",
+    "titulo": "Eventos evangelísticos",
+    "categoria": "Ministerio",
+    "fecha": "2026-06-17T00:22:00.500Z",
+    "imagen": "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=800&q=80",
+    "descripcion": "<p>Los eventos evangelísticos son una forma poderosa de compartir el Evangelio con personas que no conocen a Jesucristo. En los últimos años, hemos visto cómo eventos como estos han llevado a miles de personas a la fe.</p><h2>La importancia de los eventos evangelísticos</h2><p>Los eventos evangelísticos son una forma de <strong>compartir el Evangelio</strong> con personas que no conocen a Jesucristo. En <blockquote>Mateo 28:19-20</blockquote>, se nos dice: <blockquote>„Id, y haced discípulos a todas las naciones, bautizándolos en el nombre del Padre, y del Hijo, y del Espíritu Santo, enseñándoles que guarden todas las cosas que os he mandado“.</blockquote> Esto significa que debemos compartir el Evangelio con todos, y que los eventos evangelísticos son una forma de hacerlo.</p><h2>Consejos para organizar un evento evangelístico</h2><p>Organizar un evento evangelístico puede ser un desafío, pero hay varias cosas que podemos hacer para lograrlo. Primero, debemos <strong>orar</strong> por el evento y por las personas que asistirán. También debemos <em>planificar</em> cuidadosamente el evento, incluyendo la música, el mensaje y la follow-up. Finalmente, debemos <strong>ser sensibles</strong> al Espíritu Santo y dejar que Él guíe el evento.</p><p class=\"fuente-articulo\">Fuente: <a href=\"https://elblogdelcristiano.com/franklin-graham-se-prepara-para-el-evento-evangelistico-mas-grande-de-europa-en-25-anos/\" target=\"_blank\" rel=\"noopener noreferrer\">El Blog del Cristiano</a></p>",
+    "url": "https://elblogdelcristiano.com/franklin-graham-se-prepara-para-el-evento-evangelistico-mas-grande-de-europa-en-25-anos/"
+  },
+  {
     "id": "La-Fe-en-el",
     "titulo": "La Fe en el",
     "categoria": "Vida",
@@ -1783,14 +1792,5 @@
     "fecha": "2023-08-13T21:00:06.971Z",
     "imagen": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/noticias%2Fpueblo-judio-rezando-al-muro-occidental-jerusalen%20(3).jpg?alt=media&token=ab6111ab-8431-4bbf-a142-9392ebfce710",
     "categoria": "Israel"
-  },
-  {
-    "id": "Israel-no-esta-conforme-con-la-propuesta-de-Hamas",
-    "categoria": "Israel",
-    "imagen": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/noticias%2Fimages.jpg?alt=media&token=18bbb907-b1f7-4789-9de9-91e0bf377bff",
-    "fecha": "2024-05-07T15:57:08.751Z",
-    "url": "",
-    "descripcion": "<p>&nbsp;</p><p style=\"text-align:center\"><span style=\"font-size:48px\"><img src=\"https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/noticias%2Fimages.jpg?alt=media&token=18bbb907-b1f7-4789-9de9-91e0bf377bff\"></span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\">En un giro inesperado en las tensiones de Oriente Medio, Israel ha anunciado que, aunque la propuesta de tregua aceptada por Hamas “está lejos” de cumplir con sus requisitos de seguridad, enviará una delegación a las negociaciones en un esfuerzo por alcanzar la paz. La decisión se produce después de intensas deliberaciones internas y presiones internacionales para evitar una escalada mayor del conflicto.</span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\"><br></span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\">La propuesta, que fue mediada por Egipto y otros actores internacionales, ha sido objeto de un intenso escrutinio por parte de las autoridades israelíes. A pesar de las reservas, el gobierno israelí ha expresado su compromiso con la búsqueda de una solución diplomática y ha acordado participar en las conversaciones que se llevarán a cabo en El Cairo.</span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\"><br></span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\">“Israel está comprometido con la paz y, como tal, estamos dispuestos a explorar todas las vías posibles”, dijo un portavoz del gobierno. “Sin embargo, cualquier acuerdo debe garantizar la seguridad a largo plazo de nuestros ciudadanos”.</span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\"><br></span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\">La delegación israelí estará compuesta por expertos en seguridad y diplomáticos de alto nivel, y se espera que aborden temas críticos como la seguridad fronteriza, el cese del lanzamiento de cohetes y el levantamiento de bloqueos. Mientras tanto, las tensiones siguen siendo altas en la región, con la comunidad internacional observando de cerca los desarrollos.</span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\"><br></span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\">Este movimiento de Israel podría ser un paso significativo hacia la disminución de la violencia y la reanudación de un proceso de paz más amplio en la región. Sin embargo, queda por ver si las partes pueden superar sus diferencias y llegar a un acuerdo que satisfaga las necesidades de ambas.</span></p><p>&nbsp;</p><p style=\"text-align:justify\">&nbsp;</p>",
-    "titulo": "Israel no esta conforme con la propuesta de Hamas"
   }
 ]
