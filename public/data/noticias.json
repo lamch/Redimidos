@@ -1,5 +1,14 @@
 [
   {
+    "id": "Terremoto",
+    "titulo": "Terremoto",
+    "categoria": "Internacional",
+    "fecha": "2026-06-30T00:10:03.667Z",
+    "imagen": "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&q=80",
+    "descripcion": "<p>Un reciente terremoto en Filipinas ha dejado a muchas personas sin hogar y sin acceso a recursos básicos. La operación Bendición ha llegado a una aldea remota destruida por el terremoto para brindar ayuda y apoyo a las víctimas.</p><h2>La situación en la aldea</h2><p>La aldea fue severamente dañada por el terremoto, y muchas personas perdieron sus hogares y sus medios de subsistencia. La operación Bendición ha llegado para brindar ayuda y apoyo a las víctimas, y muchos han expresado su gratitud por la ayuda recibida.</p><h2>La respuesta de la iglesia</h2><p>La iglesia debe responder a las necesidades de las personas afectadas por el terremoto de manera efectiva. Esto puede incluir la provisión de alimentos, agua y refugio, así como el apoyo espiritual y emocional. Como dice <blockquote>2 Corintios 9:8</blockquote>: <blockquote>Y Dios es poderoso para hacer que abunde en vosotros toda gracia, para que, teniendo en todas las cosas todo lo que necesitáis, abundéis para toda buena obra.</blockquote></p><h2>La esperanza en la restauración</h2><p>A pesar de la destrucción causada por el terremoto, los cristianos deben tener esperanza en la restauración. La Biblia nos enseña que Dios es un Dios de restauración y que puede hacer que todas las cosas obren para el bien de aquellos que lo aman. En <blockquote>Romanos 8:28</blockquote> se nos dice: <blockquote>Y sabemos que para los que aman a Dios, todas las cosas obran para bien, para los que son llamados según su propósito.</blockquote></p><p class=\"fuente-articulo\">Fuente: <a href=\"https://www1.cbn.com/mundocristiano/el-mundo/2026/june/operacion-bendicion-llega-a-una-aldea-remota-destruida-por-el-terremoto-de-filipinas-dios-los-trajo-hasta-aqui\" target=\"_blank\" rel=\"noopener noreferrer\">CBN Mundo Cristiano</a></p>",
+    "url": "https://www1.cbn.com/mundocristiano/el-mundo/2026/june/operacion-bendicion-llega-a-una-aldea-remota-destruida-por-el-terremoto-de-filipinas-dios-los-trajo-hasta-aqui"
+  },
+  {
     "id": "La-importancia-de-la-oracion",
     "titulo": "La importancia de la oración",
     "categoria": "Vida",
@@ -1783,14 +1792,5 @@
     "titulo": "El evangelio de la prosperidad gana adeptos entre los fieles de EE.UU.",
     "categoria": "Vida",
     "imagen": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/noticias%2Fjosh-appel-NeTPASr-bmQ-unsplash.jpg?alt=media&token=00495e0e-32b8-46d6-9d8a-903a376142e0"
-  },
-  {
-    "id": "El-fiscal-del-TPI-solicita-órdenes-de-arresto-contra-líderes-israelíes-y-de-Hamás",
-    "categoria": "Israel",
-    "imagen": "https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/noticias%2Fcaptura11.png?alt=media&token=0eba5361-68a5-4d40-9f98-0a4906d1cf53",
-    "titulo": "El fiscal del TPI solicita órdenes de arresto contra líderes israelíes y de Hamás",
-    "fecha": "2024-05-20T18:35:42.744Z",
-    "url": "",
-    "descripcion": "<p>&nbsp;</p><p style=\"text-align:center\"><span style=\"font-size:48px\"><img src=\"https://firebasestorage.googleapis.com/v0/b/app-cristian-ccbf3.appspot.com/o/noticias%2Fcaptura11.png?alt=media&amp;token=0eba5361-68a5-4d40-9f98-0a4906d1cf53\"></span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\">El fiscal jefe del Tribunal Penal Internacional (TPI), Karim Khan, ha solicitado la emisión de órdenes de arresto contra el primer ministro de Israel, Benjamin Netanyahu, su ministro de Defensa, Yoav Gallant, y varios líderes del Movimiento de Resistencia Islámica (Hamás). Esta acción sin precedentes se basa en “motivos razonables” para creer que los acusados tienen responsabilidad penal en crímenes de guerra y crímenes contra la humanidad cometidos en el territorio del Estado de Palestina, incluida la Franja de Gaza, desde el 8 de octubre.</span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\"><br></span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\">Las órdenes también afectan a figuras clave de Hamás, incluyendo a Yahya Sinwar, jefe de Hamás en Gaza; Mohamed Diab al Masri, conocido como ‘Abú Deif’, jefe del ala militar del grupo; e Ismail Haniye, jefe del brazo político de la organización. Se les atribuye responsabilidad penal por crímenes cometidos tanto en Israel como en el Estado de Palestina desde el 7 de octubre.</span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\"><br></span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\">La respuesta de Netanyahu no se ha hecho esperar, acusando a Khan de tener una “completa distorsión de la realidad” y comparar a las Fuerzas de Defensa de Israel, que él describe como “el ejército más moral del mundo”, con \"los monstruos de Hamás\".</span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\"><br></span></p><p style=\"text-align:justify\"><span style=\"font-size:48px;\">Este llamado del TPI marca un momento crítico en las relaciones internacionales y plantea serias preguntas sobre la responsabilidad y la justicia en conflictos de larga duración.</span></p><p>&nbsp;</p><p style=\"text-align:justify\">&nbsp;</p>"
   }
 ]
